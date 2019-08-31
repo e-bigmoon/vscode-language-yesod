@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>lucius</string>
+	</array>
+	<key>name</key>
+	<string>Yesod Lucius</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.yesod</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.other.yesod</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>([#@]){(.+)}</string>
+			<key>name</key>
+			<string>interpolation.yesod</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.css</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.yesod.lucius</string>
+	<key>uuid</key>
+	<string>3215cc96-84e9-4ea3-af7a-8a8bc1518dbd</string>
+</dict>
+</plist>

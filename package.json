@@ -1,25 +1,120 @@
 {
-    "name": "language-yesod",
-    "displayName": "Language Yesod",
-    "description": "Syntax highlighting for the Haskell Yesod web framework",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.37.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "language-yesod",
+  "displayName": "Language Yesod",
+  "description": "Syntax highlighting for the Haskell Yesod web framework",
+  "version": "0.0.1",
+  "publisher": "nicolashery",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolashery/vscode-language-yesod.git"
+  },
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "yesod.hamlet",
+        "aliases": [
+          "Yesod - Hamlet",
+          "yesod.hamlet"
+        ],
+        "extensions": [
+          ".hamlet"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.julius",
+        "aliases": [
+          "Yesod - Julius",
+          "yesod.julius"
+        ],
+        "extensions": [
+          ".julius"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.lucius",
+        "aliases": [
+          "Yesod - Lucius",
+          "yesod.lucius"
+        ],
+        "extensions": [
+          ".lucius"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.messages",
+        "aliases": [
+          "Yesod - Messages",
+          "yesod.messages"
+        ],
+        "extensions": [
+          ".msg"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.models",
+        "aliases": [
+          "Yesod - Models",
+          "yesod.models"
+        ],
+        "extensions": [
+          ".persistentmodels"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.routes",
+        "aliases": [
+          "Yesod - Routes",
+          "yesod.routes"
+        ],
+        "extensions": [
+          ".yesodroutes"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "yesod.models",
-            "aliases": ["Yesod - Models", "yesod.models"],
-            "extensions": [".persistentmodels"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "yesod.models",
-            "scopeName": "source.yesod.models",
-            "path": "./syntaxes/models.tmLanguage"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "yesod.hamlet",
+        "scopeName": "source.yesod.hamlet",
+        "path": "./syntaxes/hamlet.tmLanguage"
+      },
+      {
+        "language": "yesod.julius",
+        "scopeName": "source.yesod.julius",
+        "path": "./syntaxes/julius.tmLanguage"
+      },
+      {
+        "language": "yesod.lucius",
+        "scopeName": "source.yesod.lucius",
+        "path": "./syntaxes/lucius.tmLanguage"
+      },
+      {
+        "language": "yesod.messages",
+        "scopeName": "source.yesod.messages",
+        "path": "./syntaxes/messages.tmLanguage"
+      },
+      {
+        "language": "yesod.models",
+        "scopeName": "source.yesod.models",
+        "path": "./syntaxes/models.tmLanguage"
+      },
+      {
+        "language": "yesod.routes",
+        "scopeName": "source.yesod.routes",
+        "path": "./syntaxes/routes.tmLanguage"
+      }
+    ]
+  }
 }
