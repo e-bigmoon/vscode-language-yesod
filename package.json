@@ -1,0 +1,25 @@
+{
+    "name": "language-yesod",
+    "displayName": "Language Yesod",
+    "description": "Syntax highlighting for the Haskell Yesod web framework",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "yesod.models",
+            "aliases": ["Yesod - Models", "yesod.models"],
+            "extensions": [".persistentmodels"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "yesod.models",
+            "scopeName": "source.yesod.models",
+            "path": "./syntaxes/models.tmLanguage"
+        }]
+    }
+}
