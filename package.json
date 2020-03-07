@@ -51,6 +51,17 @@
         "configuration": "./language-configuration.json"
       },
       {
+        "id": "yesod.cassius",
+        "aliases": [
+          "Yesod - Cassius",
+          "yesod.cassius"
+        ],
+        "extensions": [
+          ".cassius"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
         "id": "yesod.messages",
         "aliases": [
           "Yesod - Messages",
@@ -99,6 +110,11 @@
         "language": "yesod.lucius",
         "scopeName": "source.yesod.lucius",
         "path": "./syntaxes/lucius.tmLanguage"
+      },
+      {
+        "language": "yesod.cassius",
+        "scopeName": "source.yesod.cassius",
+        "path": "./syntaxes/cassius.tmLanguage"
       },
       {
         "language": "yesod.messages",
