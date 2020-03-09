@@ -1490,14 +1490,14 @@
 			"name": "entity.other.attribute-name.pseudo-element.css"
 		},
 		"rule-list": {
-			"begin": "{",
-			"beginCaptures": {
+			"begin": "^\\s*",
+			"$beginCaptures": {
 				"0": {
 					"name": "punctuation.section.property-list.begin.bracket.curly.css"
 				}
 			},
-			"end": "}",
-			"endCaptures": {
+			"end": "(?=$|[ \\t]+($|#))",
+			"$endCaptures": {
 				"0": {
 					"name": "punctuation.section.property-list.end.bracket.curly.css"
 				}
@@ -1541,7 +1541,7 @@
 							"name": "punctuation.separator.key-value.css"
 						}
 					},
-					"end": "\\s*(;)|\\s*(?=}|\\))",
+					"end": "\\s*(\\n)|\\s*(?=\\n|\\))",
 					"endCaptures": {
 						"1": {
 							"name": "punctuation.terminator.rule.css"
@@ -1565,7 +1565,7 @@
 		},
 		"selector": {
 			"begin": "(?x)\n(?=\n  (?:\\|)?                    # Possible anonymous namespace prefix\n  (?:\n    [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n    |\n    [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n    |\n    \\\\                      # Or an escape sequence\n    (?:[0-9a-fA-F]{1,6}|.)\n  )\n)",
-			"end": "(?=\\s*[/@{)])",
+			"end": "(?=\\s*[/@\n)])",
 			"name": "meta.selector.css",
 			"patterns": [
 				{
