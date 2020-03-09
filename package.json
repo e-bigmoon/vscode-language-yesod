@@ -2,12 +2,13 @@
   "name": "language-yesod",
   "displayName": "Language Yesod",
   "description": "Syntax highlighting for the Haskell Yesod web framework",
-  "version": "0.0.1",
-  "publisher": "nicolashery",
+  "version": "0.0.2",
+  "publisher": "BIGMOON",
   "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicolashery/vscode-language-yesod.git"
+    "url": "https://github.com/e-bigmoon/vscode-language-yesod.git"
   },
   "engines": {
     "vscode": "^1.37.0"
@@ -47,6 +48,24 @@
         ],
         "extensions": [
           ".lucius"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yesod.indent.css",
+        "aliases": [
+          "Yesod - Indent CSS",
+          "yesod.indent.css"
+        ]
+      },
+      {
+        "id": "yesod.cassius",
+        "aliases": [
+          "Yesod - Cassius",
+          "yesod.cassius"
+        ],
+        "extensions": [
+          ".cassius"
         ],
         "configuration": "./language-configuration.json"
       },
@@ -99,6 +118,16 @@
         "language": "yesod.lucius",
         "scopeName": "source.yesod.lucius",
         "path": "./syntaxes/lucius.tmLanguage"
+      },
+      {
+        "language": "yesod.indent.css",
+        "scopeName": "source.indent.css",
+        "path": "./syntaxes/indent-css.tmLanguage.json"
+      },
+      {
+        "language": "yesod.cassius",
+        "scopeName": "source.yesod.cassius",
+        "path": "./syntaxes/cassius.tmLanguage"
       },
       {
         "language": "yesod.messages",
