@@ -3,12 +3,12 @@
   "displayName": "Language Yesod",
   "description": "Syntax highlighting for the Haskell Yesod web framework",
   "version": "0.0.2",
-  "publisher": "nicolashery",
+  "publisher": "BIGMOON",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicolashery/vscode-language-yesod.git"
+    "url": "https://github.com/e-bigmoon/vscode-language-yesod.git"
   },
   "engines": {
     "vscode": "^1.37.0"
