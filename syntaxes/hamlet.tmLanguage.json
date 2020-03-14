@@ -35,10 +35,13 @@
         "keyword": {
             "patterns": [
                 {
-                    "begin": "(\\$[a-z]+)",
+                    "begin": "(\\$)(if|elseif|else|maybe|nothing|forall|case|of|with|doctype)(\\s+)",
                     "beginCaptures": {
                         "1": {
-                            "name": "constant.other.yesod"
+                            "name": "keyword.constant.other.yesod"
+                        },
+                        "2": {
+                            "name": "keyword.constant.other.yesod"
                         }
                     },
                     "end": "\n",
