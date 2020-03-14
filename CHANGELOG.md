@@ -11,3 +11,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.2] - 2020-03-09
 ### Added
 - Syntax highlighting for Cassius files
+
+## [0.1.0] - 2020-03-14
+### Added
+- Syntax highlighting for Hamlet keywords ($ if, $ forall, etc.)
+- Syntax highlights for Hamlet comments
+
+### Changed
+- Changed from tmLanguage format to JSON format
