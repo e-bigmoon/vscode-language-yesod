@@ -107,7 +107,7 @@
       {
         "language": "yesod.hamlet",
         "scopeName": "source.yesod.hamlet",
-        "path": "./syntaxes/hamlet.tmLanguage"
+        "path": "./syntaxes/hamlet.tmLanguage.json"
       },
       {
         "language": "yesod.julius",
