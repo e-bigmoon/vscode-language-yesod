@@ -10,6 +10,9 @@
         },
         {
             "include": "#keyword"
+        },
+        {
+            "include": "#comment"
         }
     ],
     "repository": {
@@ -44,6 +47,19 @@
                     ]
                 }
            ]
+        },
+        "comment": {
+            "patterns": [
+                {
+                    "match": "^\\s*\\$#.*$",
+                    "name": "comment.yesod.hamlet",
+                    "patterns": [
+                        {
+                            "include": "source.haskell"
+                        }
+                    ]
+                }
+            ]
         }
     },
     "scopeName": "source.yesod.hamlet",
