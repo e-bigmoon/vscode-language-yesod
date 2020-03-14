@@ -27,7 +27,7 @@
         "extensions": [
           ".hamlet"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./hamlet-language-configuration.json"
       },
       {
         "id": "yesod.julius",
@@ -107,7 +107,7 @@
       {
         "language": "yesod.hamlet",
         "scopeName": "source.yesod.hamlet",
-        "path": "./syntaxes/hamlet.tmLanguage"
+        "path": "./syntaxes/hamlet.tmLanguage.json"
       },
       {
         "language": "yesod.julius",
