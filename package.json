@@ -27,7 +27,7 @@
         "extensions": [
           ".hamlet"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./hamlet-language-configuration.json"
       },
       {
         "id": "yesod.julius",
