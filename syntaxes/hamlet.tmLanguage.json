@@ -1,41 +1,57 @@
 {
-    "fileTypes" : ["hamlet"],
-    "name" : "Yesod Hamlet",
-    "patterns" : [
+    "fileTypes": ["hamlet"],
+    "name": "Yesod Hamlet",
+    "patterns": [
         {
-            "include" : "text.html.basic"
+            "include": "text.html.basic"
         },
         {
-            "begin" : "([_@#^]){",
-            "beginCaptures" : {
-                "1" : {
-                    "name" : "entity.other.attribute-name"
-                }
-            },
-            "end" : "}",
-            "name" : "interpolation.yesod",
-            "patterns" : [
-                {
-                    "include" : "source.haskell"
-                }
-            ]
+            "include": "#interpolation"
         },
         {
-            "begin" : "(\\$[a-z]+)",
-            "beginCaptures" : {
-                "1" : {
-                    "name" : "constant.other.yesod"
-                }
-            },
-            "end" : "\n",
-            "name" : "inline.yesod",
-            "patterns" : [
-                {
-                    "include" : "source.haskell"
-                }
-            ]
+            "include": "#inline"
         }
     ],
-    "scopeName" : "source.yesod.hamlet",
-    "uuid" : "6f5702a5-ff71-4e8f-a7dc-ec3ac750fd49"
+    "repository": {
+        "interpolation": {
+            "patterns": [
+                {
+                    "begin": "([_@#^]){",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "entity.other.attribute-name"
+                        }
+                    },
+                    "end": "}",
+                    "name": "interpolation.yesod",
+                    "patterns": [
+                        {
+                            "include": "source.haskell"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inline": {
+            "patterns": [
+                {
+                    "begin": "(\\$[a-z]+)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "constant.other.yesod"
+                        }
+                    },
+                    "end": "\n",
+                    "name": "inline.yesod",
+                    "patterns": [
+                        {
+                            "include": "source.haskell"
+                        }
+                    ]
+                }
+           ]
+        }
+    },
+    "scopeName": "source.yesod.hamlet",
+    "uuid": "6f5702a5-ff71-4e8f-a7dc-ec3ac750fd49"
 }
