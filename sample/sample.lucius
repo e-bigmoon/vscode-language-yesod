@@ -1,0 +1,14 @@
+/*
+ *  This sample is the source in the following URL.
+ *
+ *  <https://www.yesodweb.com/book/shakespearean-templates>
+ */
+
+section.blog {
+    padding: 1em;
+    border: 1px solid #000;
+    h1 {
+        color: #{headingColor};
+        background-image: url(@{MyBackgroundR});
+    }
+}

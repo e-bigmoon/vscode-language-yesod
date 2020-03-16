@@ -1,0 +1,8 @@
+Person
+    name String
+    age Int Maybe
+    deriving Show
+BlogPost
+    title String
+    authorId PersonId
+    deriving Show

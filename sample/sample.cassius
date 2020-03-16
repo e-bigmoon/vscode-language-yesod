@@ -1,3 +1,9 @@
+/*
+ *  This sample is the source in the following URL.
+ *
+ *  <https://www.yesodweb.com/book/shakespearean-templates>
+ */
+
 section.blog
     padding: 1em
     border: 1px solid #000
