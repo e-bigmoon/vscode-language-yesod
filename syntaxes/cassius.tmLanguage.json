@@ -1,4 +1,5 @@
 {
+    "scopeName": "source.yesod.cassius",
     "fileTypes": ["cassius"],
     "name": "Yesod Cassius",
     "patterns": [
@@ -26,7 +27,5 @@
                 }
             ]
         }
-    },
-    "scopeName": "source.yesod.cassius",
-    "uuid": "5664d328-5483-4e7d-b6c5-72d3e50b4179"
+    }
 }

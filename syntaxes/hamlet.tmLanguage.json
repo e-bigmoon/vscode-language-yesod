@@ -1,4 +1,5 @@
 {
+    "scopeName": "source.yesod.hamlet",
     "fileTypes": ["hamlet"],
     "name": "Yesod Hamlet",
     "patterns": [
@@ -61,7 +62,5 @@
                 }
             ]
         }
-    },
-    "scopeName": "source.yesod.hamlet",
-    "uuid": "6f5702a5-ff71-4e8f-a7dc-ec3ac750fd49"
+    }
 }
