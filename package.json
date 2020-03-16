@@ -11,7 +11,7 @@
     "url": "https://github.com/e-bigmoon/vscode-language-yesod.git"
   },
   "engines": {
-    "vscode": "^1.37.0"
+    "vscode": "^1.42.1"
   },
   "categories": [
     "Programming Languages"
@@ -127,7 +127,7 @@
       {
         "language": "yesod.cassius",
         "scopeName": "source.yesod.cassius",
-        "path": "./syntaxes/cassius.tmLanguage"
+        "path": "./syntaxes/cassius.tmLanguage.json"
       },
       {
         "language": "yesod.messages",

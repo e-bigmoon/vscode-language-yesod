@@ -1,0 +1,33 @@
+{
+    "scopeName": "source.yesod.cassius",
+    "fileTypes": [
+        "cassius"
+    ],
+    "name": "Yesod Cassius",
+    "patterns": [
+        {
+            "include": "source.indent.css"
+        },
+        {
+            "include": "#interpolation"
+        }
+    ],
+    "repository": {
+        "interpolation": {
+            "patterns": [
+                {
+                    "match": "([#@]){(.+)}",
+                    "captures": {
+                        "1": {
+                            "name": "entity.other.attribute-name.yesod"
+                        },
+                        "2": {
+                            "name": "constant.other.yesod"
+                        }
+                    },
+                    "name": "interpolation.yesod"
+                }
+            ]
+        }
+    }
+}
