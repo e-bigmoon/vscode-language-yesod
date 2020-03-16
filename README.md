@@ -33,4 +33,9 @@ vsce package
 
 ## Publish
 
+```
+$ vsce package
+$ vsce publish <level>
+```
+
 - [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
