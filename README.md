@@ -30,3 +30,7 @@ If you need to re-package after making or pulling some changes, make sure to cle
 rm language-yesod-<VERSION>.vsix
 vsce package
 ```
+
+## Publish
+
+- [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
