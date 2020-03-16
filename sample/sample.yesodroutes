@@ -1,0 +1,10 @@
+--
+-- This sample is the source in the following URL.
+--
+-- <https://www.yesodweb.com/book/routing-and-handlers>
+
+/             HomeR     GET
+/blog         BlogR     GET POST
+/blog/#BlogId BlogPostR GET POST
+
+/static       StaticR   Static getStatic
