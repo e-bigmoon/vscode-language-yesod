@@ -21,6 +21,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Changed
 - Changed from tmLanguage format to JSON format
+    - Hamlet
+    - Cassius
 
 ## [0.0.2] - 2020-03-09
 ### Added
