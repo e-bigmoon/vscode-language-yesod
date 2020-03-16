@@ -14,7 +14,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - `$if`, `$elseif`, `$else`
     - `$maybe`, `$nothing`
     - `$forall`
-    - `$case`, `$of`, `$with`
+    - `$case`, `$of`
+    - `$with`
     - `$doctype`
 - Syntax highlights for Hamlet comments
 
