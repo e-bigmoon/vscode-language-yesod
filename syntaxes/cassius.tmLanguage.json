@@ -1,6 +1,8 @@
 {
     "scopeName": "source.yesod.cassius",
-    "fileTypes": ["cassius"],
+    "fileTypes": [
+        "cassius"
+    ],
     "name": "Yesod Cassius",
     "patterns": [
         {
