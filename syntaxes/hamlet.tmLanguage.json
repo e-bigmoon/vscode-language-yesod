@@ -42,12 +42,7 @@
             "patterns": [
                 {
                     "match": "(\\$)(if|elseif|else|maybe|nothing|forall|case|of|with|doctype)(\\s+)",
-                    "name": "keyword.yesod.hamlet",
-                    "patterns": [
-                        {
-                            "include": "source.haskell"
-                        }
-                    ]
+                    "name": "keyword.yesod.hamlet"
                 }
             ]
         },
@@ -55,12 +50,7 @@
             "patterns": [
                 {
                     "match": "^\\s*\\$#.*$",
-                    "name": "comment.yesod.hamlet",
-                    "patterns": [
-                        {
-                            "include": "source.haskell"
-                        }
-                    ]
+                    "name": "comment.yesod.hamlet"
                 }
             ]
         }
