@@ -3,21 +3,30 @@
     "name": "Yesod Cassius",
     "patterns": [
         {
-            "captures": {
-                "1": {
-                    "name": "entity.other.attribute-name.yesod"
-                },
-                "2": {
-                    "name": "constant.other.yesod"
-                }
-            },
-            "match": "([#@]){(.+)}",
-            "name": "interpolation.yesod"
+            "include": "source.indent.css"
         },
         {
-            "include": "source.indent.css"
+            "include": "#interpolation"
         }
     ],
+    "repository": {
+        "interpolation": {
+            "patterns": [
+                {
+                    "match": "([#@]){(.+)}",
+                    "captures": {
+                        "1": {
+                            "name": "entity.other.attribute-name.yesod"
+                        },
+                        "2": {
+                            "name": "constant.other.yesod"
+                        }
+                    },
+                    "name": "interpolation.yesod"
+                }
+            ]
+        }
+    },
     "scopeName": "source.yesod.cassius",
     "uuid": "5664d328-5483-4e7d-b6c5-72d3e50b4179"
 }
