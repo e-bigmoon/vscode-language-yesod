@@ -8,8 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 
-## [0.1.0] - 2020-03-14
+## [0.2.0] - 2020-03-14
+
 ### Added
+
 - Syntax highlighting for Hamlet keywords
     - `$if`, `$elseif`, `$else`
     - `$maybe`, `$nothing`
@@ -20,10 +22,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Syntax highlights for Hamlet comments
 
 ### Changed
+
 - Changed from tmLanguage format to JSON format
     - Hamlet
     - Cassius
 
 ## [0.0.2] - 2020-03-09
+
 ### Added
+
 - Syntax highlighting for Cassius files
