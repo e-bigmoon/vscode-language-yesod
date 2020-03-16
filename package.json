@@ -127,7 +127,7 @@
       {
         "language": "yesod.cassius",
         "scopeName": "source.yesod.cassius",
-        "path": "./syntaxes/cassius.tmLanguage"
+        "path": "./syntaxes/cassius.tmLanguage.json"
       },
       {
         "language": "yesod.messages",
