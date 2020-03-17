@@ -6,13 +6,13 @@
 
 lang | extension | example
 -----|-----------|----------
-`hamlet`  | `.hamlet` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.hamlet)
-`cassius` | `.cassius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.cassius)
-`lucius` | `.lucius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.lucius)
-`julius` | `.julius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.julius)
-`msg` | `.msg` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.msg)
-`model` | `.persistentmodels` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.persistentmodels)
-`route` | `.yesodroutes` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.yesodroutes)
+`hamlet`  | `.hamlet` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.hamlet)
+`cassius` | `.cassius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.cassius)
+`lucius` | `.lucius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.lucius)
+`julius` | `.julius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.julius)
+`msg` | `.msg` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/tree/sample.msg)
+`model` | `.persistentmodels` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.persistentmodels)
+`route` | `.yesodroutes` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.yesodroutes)
 
 ## Installation
 
