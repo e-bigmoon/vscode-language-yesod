@@ -2,7 +2,7 @@
   "name": "language-yesod",
   "displayName": "Language Yesod",
   "description": "Syntax highlighting for the Haskell Yesod web framework",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "publisher": "BIGMOON",
   "license": "MIT",
   "private": true,
