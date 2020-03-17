@@ -5,14 +5,22 @@
 ## Supported Languages
 
 lang | extension | example
------|-----------|----------
-`hamlet`  | `.hamlet` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.hamlet)
-`cassius` | `.cassius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.cassius)
-`lucius` | `.lucius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.lucius)
-`julius` | `.julius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.julius)
-`msg` | `.msg` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/tree/sample.msg)
-`model` | `.persistentmodels` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.persistentmodels)
-`route` | `.yesodroutes` | [here](https://github.com/e-bigmoon/vscode-language-yesod/tree/sample/sample.yesodroutes)
+-----|-----------|:----------:
+`hamlet`  | `.hamlet` | [here][hamlet]
+`cassius` | `.cassius` | [here][cassius]
+`lucius` | `.lucius` | [here][lucius]
+`julius` | `.julius` | [here][julius]
+`msg` | `.msg` | [here][msg]
+`model` | `.persistentmodels` | [here][model]
+`route` | `.yesodroutes` | [here][route]
+
+[hamlet]:  https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.hamlet
+[cassius]: https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.cassius
+[lucius]:  https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.lucius
+[julius]:  https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.julius
+[msg]:     https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.msg
+[model]:   https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.persistentmodels
+[route]:   https://github.com/e-bigmoon/vscode-language-yesod/tree/master/sample/sample.yesodroutes
 
 ## Installation
 
