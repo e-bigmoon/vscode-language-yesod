@@ -2,34 +2,21 @@
 
 [Visual Studio Code](https://code.visualstudio.com/) syntax highlighting for the Haskell [Yesod](https://www.yesodweb.com/) web framework.
 
-TextMate grammars ported from https://bitbucket.org/dpwiz/sublime-yesod.
+## Supported Languages
+
+lang | extension | example
+-----|-----------|----------
+`hamlet`  | `.hamlet` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.hamlet)
+`cassius` | `.cassius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.cassius)
+`lucius` | `.lucius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.lucius)
+`julius` | `.julius` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.julius)
+`msg` | `.msg` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.msg)
+`model` | `.persistentmodels` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.persistentmodels)
+`route` | `.yesodroutes` | [here](https://github.com/e-bigmoon/vscode-language-yesod/sample/sample.yesodroutes)
 
 ## Installation
 
-Make sure you have [Node.js](https://nodejs.org/) installed, then install the [vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#vsce) tool:
-
-```
-npm install -g vsce
-```
-
-Then run:
-
-```
-vsce package
-```
-
-This will create a `language-yesod-<VERSION>.vsix` file, which you can add to VSCode with:
-
-```
-code --install-extension language-yesod-<VERSION>.vsix
-```
-
-If you need to re-package after making or pulling some changes, make sure to clean up the previous `.vsix` file before:
-
-```
-rm language-yesod-<VERSION>.vsix
-vsce package
-```
+- [Language Yesod - VScode MarketPlace](https://marketplace.visualstudio.com/items?itemName=BIGMOON.language-yesod)
 
 ## Publish
 
