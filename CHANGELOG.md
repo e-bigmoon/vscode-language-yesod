@@ -4,6 +4,14 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.0] - 2020-03-17
+
+- Add `*{...}` interpolation
+- Add `@?{...}` interpolation
+- Add `$newline` keyword
+- Add attribute
+- Stop highlighting HTML tags and attributes
+
 ## [0.2.1], [0.2.2] - 2020-03-16
 
 - Released due to incomplete release procedure
