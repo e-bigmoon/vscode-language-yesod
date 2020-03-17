@@ -4,6 +4,7 @@ $#
 $# <https://www.yesodweb.com/book/shakespearean-templates>
 $#
 
+$newline never
 $doctype 5
 <html>
     <head>
@@ -55,3 +56,26 @@ $doctype 5
     $# With
     $with foo <- some very (long ugly) expression that $ should only $ happen once
         <p>But I'm going to use #{foo} multiple times. #{foo}
+
+    $# Interpolation
+    <p>#{currPage}
+    <div ##{xxx}>
+
+    <p>@{Stylesheet}
+    <a href=@?{(SomePage, [("page", pack $ show $ currPage + 1)])}>
+    <p>_{Hello}
+    <p>^{addBling}
+
+    $# Attributes
+    <input type=checkbox checked>
+    
+    <p #paragraphid .class1 .class2>
+    <img src=https://example.com/images/a.jpg>
+
+    <input type=checkbox :isChecked:checked>
+    <p :isRed:style="color:red">
+    <p :isCurrent:.current>
+    <li :Just route == mcurrentRoute:.active>test
+
+    <p *{attrs}>
+

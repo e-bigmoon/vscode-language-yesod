@@ -1,58 +1,105 @@
 {
-    "scopeName": "source.yesod.hamlet",
-    "fileTypes": [
-        "hamlet"
-    ],
-    "name": "Yesod Hamlet",
-    "patterns": [
+  "scopeName": "source.yesod.hamlet",
+  "fileTypes": ["hamlet"],
+  "name": "Yesod Hamlet",
+  "patterns": [
+    { "include": "#interpolation" },
+    { "include": "#keyword" },
+    { "include": "#comment" },
+    { "include": "#tag" }
+  ],
+  "repository": {
+    "interpolation": {
+      "patterns": [
         {
-            "include": "text.html.basic"
-        },
-        {
-            "include": "#interpolation"
-        },
-        {
-            "include": "#keyword"
-        },
-        {
-            "include": "#comment"
+          "begin": "([_@#^\\*]|@\\?)\\{",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.section.embedded.begin.hamlet"
+            }
+          },
+          "contentName": "source.haskell",
+          "end": "(\\})",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.embedded.end.hamlet"
+            }
+          },
+          "name": "meta.embedded.line.hamlet",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
         }
-    ],
-    "repository": {
-        "interpolation": {
-            "patterns": [
-                {
-                    "begin": "([_@#^]){",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "entity.other.attribute-name"
-                        }
-                    },
-                    "end": "}",
-                    "name": "interpolation.yesod",
-                    "patterns": [
-                        {
-                            "include": "source.haskell"
-                        }
-                    ]
-                }
-            ]
+      ]
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "match": "\\$(else|nothing|doctype|newline)\\s+",
+          "name": "keyword.control.hamlet"
         },
-        "keyword": {
-            "patterns": [
-                {
-                    "match": "(\\$)(if|elseif|else|maybe|nothing|forall|case|of|with|doctype)(\\s+)",
-                    "name": "keyword.yesod.hamlet"
-                }
-            ]
-        },
-        "comment": {
-            "patterns": [
-                {
-                    "match": "^\\s*\\$#.*$",
-                    "name": "comment.yesod.hamlet"
-                }
-            ]
+        {
+          "begin": "\\$(if|elseif|maybe|forall|case|of|with)\\s+",
+          "beginCaptures": {
+            "0": { "name": "keyword.control.hamlet" }
+          },
+          "end": "\\n",
+          "name": "meta.embedded.line.hamlet",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
         }
+      ]
+    },
+    "comment": {
+      "patterns": [
+        {
+          "match": "^\\s*\\$#.*$",
+          "name": "comment.line.$#.hamlet"
+        }
+      ]
+    },
+    "tag": {
+      "patterns": [
+        {
+          "begin": "<[a-z]+",
+          "end": ">",
+          "name": "meta.embedded.line.hamlet",
+          "patterns": [
+            { "include": "#attribute" },
+            { "include": "#interpolation" },
+            {
+              "match": "\\s(#|\\.)([^\\s>]+)",
+              "captures": {
+                "1": { "name": "entity.other.attribute-name.hamlet" },
+                "2": {
+                  "patterns": [
+                    { "include": "#interpolation" },
+                    {
+                      "match": "\\w",
+                      "name": "entity.other.attribute-name.hamlet"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "repository": {
+        "attribute": {
+          "patterns": [
+            {
+              "match": ":[^:]+:[^>]+",
+              "name": "entity.other.attribute-name.hamlet"
+            }
+          ]
+        }
+      }
     }
+  }
 }
