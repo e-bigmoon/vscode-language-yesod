@@ -4,6 +4,10 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.1] - 2020-03-17
+
+- Update Readme
+
 ## [0.3.0] - 2020-03-17
 
 - Add `*{...}` interpolation
