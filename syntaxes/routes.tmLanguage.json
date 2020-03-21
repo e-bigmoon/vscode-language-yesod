@@ -1,26 +1,26 @@
 {
-    "fileTypes": [ "routes" ],
-    "name": "Yesod routes",
-    "patterns": [
+  "scopeName": "source.yesod.routes",
+  "fileTypes": [ "routes" ],
+  "name": "Yesod routes",
+  "patterns": [
+    {
+      "begin": "^[/!]",
+      "end": "\n",
+      "name": "meta.url.route.yesod",
+      "patterns": [
         {
-            "begin": "^[/!]",
-            "end": "\n",
-            "name": "meta.url.route.yesod",
-            "patterns": [
-                {
-                    "match": "[#*+]!?[A-Z][a-zA-Z0-9]+",
-                    "name": "support.type.patterns"
-                },
-                {
-                    "match": "[A-Z][a-zA-Z0-9]+R",
-                    "name": "constant.other.handler"
-                },
-                {
-                    "match": "(GET|HEAD|POST|PUT|DELETE|OPTIONS|PATCH)",
-                    "name": "entity.name.function"
-                }
-            ]
+          "match": "[#*+]!?[A-Z][a-zA-Z0-9]+",
+          "name": "support.type.patterns"
+        },
+        {
+          "match": "[A-Z][a-zA-Z0-9]+R",
+          "name": "constant.other.handler"
+        },
+        {
+          "match": "(GET|HEAD|POST|PUT|DELETE|OPTIONS|PATCH)",
+          "name": "entity.name.function"
         }
-    ],
-    "scopeName": "source.yesod.routes"
-}    
+      ]
+    }
+  ]
+}
