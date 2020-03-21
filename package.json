@@ -142,7 +142,7 @@
       {
         "language": "yesod.routes",
         "scopeName": "source.yesod.routes",
-        "path": "./syntaxes/routes.tmLanguage"
+        "path": "./syntaxes/routes.tmLanguage.json"
       }
     ]
   }
