@@ -1,0 +1,10 @@
+{
+  "fileTypes": "models",
+  "name": "Yesod models",
+  "patterns": [
+    {
+      "include": "source.haskell"
+    }
+  ],
+  "scopeName": "source.yesod.models"
+}

@@ -137,7 +137,7 @@
       {
         "language": "yesod.models",
         "scopeName": "source.yesod.models",
-        "path": "./syntaxes/models.tmLanguage"
+        "path": "./syntaxes/models.tmLanguage.json"
       },
       {
         "language": "yesod.routes",
