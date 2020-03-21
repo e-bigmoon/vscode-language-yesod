@@ -132,7 +132,7 @@
       {
         "language": "yesod.messages",
         "scopeName": "source.yesod.messages",
-        "path": "./syntaxes/messages.tmLanguage"
+        "path": "./syntaxes/messages.tmLanguage.json"
       },
       {
         "language": "yesod.models",
