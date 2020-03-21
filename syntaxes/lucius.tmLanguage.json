@@ -1,0 +1,22 @@
+{
+    "fileTypes": [ "lucius" ],
+    "name": "Yesod Lucius",
+    "patterns": [
+        {
+            "captures": {
+                "1": {
+                    "name": "entity.other.attribute-name.yesod"
+                },
+                "2": {
+                    "name": "constant.other.yesod"
+                }
+            },
+            "match": "([#@]){(.+)}",
+            "name": "interpolation.yesod"
+        },
+        {
+            "include": "source.css"
+        }
+    ],
+    "scopeName": "source.yesod.lucius"
+}

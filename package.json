@@ -117,7 +117,7 @@
       {
         "language": "yesod.lucius",
         "scopeName": "source.yesod.lucius",
-        "path": "./syntaxes/lucius.tmLanguage"
+        "path": "./syntaxes/lucius.tmLanguage.json"
       },
       {
         "language": "yesod.indent.css",
