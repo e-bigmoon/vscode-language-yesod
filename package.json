@@ -112,12 +112,12 @@
       {
         "language": "yesod.julius",
         "scopeName": "source.yesod.julius",
-        "path": "./syntaxes/julius.tmLanguage"
+        "path": "./syntaxes/julius.tmLanguage.json"
       },
       {
         "language": "yesod.lucius",
         "scopeName": "source.yesod.lucius",
-        "path": "./syntaxes/lucius.tmLanguage"
+        "path": "./syntaxes/lucius.tmLanguage.json"
       },
       {
         "language": "yesod.indent.css",
@@ -132,17 +132,17 @@
       {
         "language": "yesod.messages",
         "scopeName": "source.yesod.messages",
-        "path": "./syntaxes/messages.tmLanguage"
+        "path": "./syntaxes/messages.tmLanguage.json"
       },
       {
         "language": "yesod.models",
         "scopeName": "source.yesod.models",
-        "path": "./syntaxes/models.tmLanguage"
+        "path": "./syntaxes/models.tmLanguage.json"
       },
       {
         "language": "yesod.routes",
         "scopeName": "source.yesod.routes",
-        "path": "./syntaxes/routes.tmLanguage"
+        "path": "./syntaxes/routes.tmLanguage.json"
       }
     ]
   }

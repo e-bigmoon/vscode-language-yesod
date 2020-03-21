@@ -1,12 +1,12 @@
 {
-  "scopeName": "source.yesod.cassius",
-  "fileTypes": [ "cassius" ],
-  "name": "Yesod Cassius",
+  "scopeName": "source.yesod.julius",
+  "fileTypes": ["julius"],
+  "name": "Yesod Julius",
   "patterns": [
-    { "include": "source.indent.css" },
+    { "include": "source.js" },
     { "include": "#interpolation" }
   ],
-  "repository": {
+  "repository" :{
     "interpolation": {
       "patterns": [
         {

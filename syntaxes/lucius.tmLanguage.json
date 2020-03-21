@@ -1,10 +1,10 @@
 {
-  "scopeName": "source.yesod.cassius",
-  "fileTypes": [ "cassius" ],
-  "name": "Yesod Cassius",
+  "scopeName": "source.yesod.lucius",
+  "fileTypes": [ "lucius" ],
+  "name": "Yesod Lucius",
   "patterns": [
-    { "include": "source.indent.css" },
-    { "include": "#interpolation" }
+      { "include": "#interpolation" },
+      { "include": "source.css" }
   ],
   "repository": {
     "interpolation": {
