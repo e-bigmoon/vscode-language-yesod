@@ -1,33 +1,27 @@
 {
-    "scopeName": "source.yesod.cassius",
-    "fileTypes": [
-        "cassius"
-    ],
-    "name": "Yesod Cassius",
-    "patterns": [
+  "scopeName": "source.yesod.cassius",
+  "fileTypes": [ "cassius" ],
+  "name": "Yesod Cassius",
+  "patterns": [
+    { "include": "source.indent.css" },
+    { "include": "#interpolation" }
+  ],
+  "repository": {
+    "interpolation": {
+      "patterns": [
         {
-            "include": "source.indent.css"
-        },
-        {
-            "include": "#interpolation"
+          "match": "([#@]){(.+)}",
+          "captures": {
+            "1": {
+              "name": "entity.other.attribute-name.yesod"
+            },
+            "2": {
+              "name": "constant.other.yesod"
+            }
+          },
+          "name": "interpolation.yesod"
         }
-    ],
-    "repository": {
-        "interpolation": {
-            "patterns": [
-                {
-                    "match": "([#@]){(.+)}",
-                    "captures": {
-                        "1": {
-                            "name": "entity.other.attribute-name.yesod"
-                        },
-                        "2": {
-                            "name": "constant.other.yesod"
-                        }
-                    },
-                    "name": "interpolation.yesod"
-                }
-            ]
-        }
+      ]
     }
+  }
 }
