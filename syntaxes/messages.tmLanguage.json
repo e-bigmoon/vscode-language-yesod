@@ -1,42 +1,54 @@
 {
+  "scopeName": "source.yesod.messages",
   "fileTypes": [ "msg" ],
   "name": "Yesod message catalog",
   "patterns": [
-    {
-      "begin": "^([A-Z][a-zA-Z0-9]+)",
-      "beginCaptures": {
-        "1": {
-          "name": "constant.other.yesod"
-        }
-      },
-      "end": "(:) ",
-      "endCaptures": {
-        "1": {
-          "name": "keyword.other.yesod"
-        }
-      },
-      "name": "message.yesod",
-      "patterns": [
-        {
-          "include": "source.haskell"
-        }
-      ]
-    },
-    {
-      "begin": "([_@#^]){",
-      "beginCaptures": {
-        "1": {
-          "name": "entity.other.attribute-name"
-        }
-      },
-      "end": "}",
-      "name": "interpolation.yesod",
-      "patterns": [
-        {
-          "include": "source.haskell"
-        }
-      ]
-    }
+    { "include": "#message" },
+    { "include": "#interpolation" }
   ],
-  "scopeName": "source.yesod.messages"
+  "repository": {
+    "message": {
+      "patterns": [
+        {
+          "begin": "^([A-Z][a-zA-Z0-9]+)",
+          "beginCaptures": {
+            "1": {
+              "name": "constant.other.yesod"
+            }
+          },
+          "end": "(:) ",
+          "endCaptures": {
+            "1": {
+              "name": "keyword.other.yesod"
+            }
+          },
+          "name": "message.yesod",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
+        }
+      ]  
+    },
+    "interpolation": {
+      "patterns": [
+        {
+          "begin": "([_@#^]){",
+          "beginCaptures": {
+            "1": {
+              "name": "entity.other.attribute-name"
+            }
+          },
+          "end": "}",
+          "name": "interpolation.yesod",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
+        }
+      ] 
+    }
+  }
 }
