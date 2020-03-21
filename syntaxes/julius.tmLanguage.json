@@ -1,0 +1,22 @@
+{
+    "fileTypes": ["julius"],
+    "name": "Yesod Julius",
+    "patterns": [
+        {
+            "include": "source.js"
+        },
+        {
+            "captures": {
+                "1": {
+                    "name": "entity.other.attribute-name.yesod"
+                },
+                "2": {
+                    "name": "constant.other.yesod"
+                }
+            },
+            "match": "([#@]){(.+)}",
+            "name": "interpolation.yesod"
+        }
+    ],
+    "scopeName": "source.yesod.julius"
+}

@@ -112,7 +112,7 @@
       {
         "language": "yesod.julius",
         "scopeName": "source.yesod.julius",
-        "path": "./syntaxes/julius.tmLanguage"
+        "path": "./syntaxes/julius.tmLanguage.json"
       },
       {
         "language": "yesod.lucius",
