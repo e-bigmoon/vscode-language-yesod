@@ -52,13 +52,6 @@
         "configuration": "./language-configuration.json"
       },
       {
-        "id": "yesod.indent.css",
-        "aliases": [
-          "Yesod - Indent CSS",
-          "yesod.indent.css"
-        ]
-      },
-      {
         "id": "yesod.cassius",
         "aliases": [
           "Yesod - Cassius",
@@ -118,11 +111,6 @@
         "language": "yesod.lucius",
         "scopeName": "source.yesod.lucius",
         "path": "./syntaxes/lucius.tmLanguage.json"
-      },
-      {
-        "language": "yesod.indent.css",
-        "scopeName": "source.indent.css",
-        "path": "./syntaxes/indent-css.tmLanguage.json"
       },
       {
         "language": "yesod.cassius",

@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased changes]
 
+- Indent-css content integrated into cassius
 - Fixed syntax highlighting bug in route file [#7](https://github.com/e-bigmoon/vscode-language-yesod/pull/7)
 - Converted tmLanguage format files to JSON format [#5](https://github.com/e-bigmoon/vscode-language-yesod/pull/5)
 
