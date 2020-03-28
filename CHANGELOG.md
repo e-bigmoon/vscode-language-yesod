@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased changes]
 
-- Added syntax highlighting keyword to preserve white space
+- Added syntax highlighting keyword to preserve white space [#9](https://github.com/e-bigmoon/vscode-language-yesod/pull/9)
 - Indent-css content integrated into cassius (indent-css.tmLanguage.json has been deleted) [#8](https://github.com/e-bigmoon/vscode-language-yesod/pull/8)
 - Fixed syntax highlighting bug in route file [#7](https://github.com/e-bigmoon/vscode-language-yesod/pull/7)
 - Converted tmLanguage format files to JSON format [#5](https://github.com/e-bigmoon/vscode-language-yesod/pull/5)
