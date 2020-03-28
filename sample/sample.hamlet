@@ -79,3 +79,8 @@ $doctype 5
 
     <p *{attrs}>
 
+    $# Preserve whitespace
+    <p>
+        Paragraph #
+        <i>italic
+        \ end.

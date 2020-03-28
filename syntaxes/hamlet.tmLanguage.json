@@ -52,6 +52,10 @@
               "include": "source.haskell"
             }
           ]
+        },
+        {
+          "match": "#$|^\\s*\\\\",
+          "name": "keyword.operator.hamlet"
         }
       ]
     },
