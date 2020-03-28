@@ -13,7 +13,7 @@
           "name": "support.type.patterns"
         },
         {
-          "match": "\\b([A-Z][a-zA-Z0-9]+R)\\s+",
+          "match": "\\b([A-Z][a-zA-Z0-9]+R)\\b",
           "name": "constant.other.handler"
         },
         {
