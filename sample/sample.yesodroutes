@@ -8,3 +8,5 @@
 /blog/#BlogId BlogPostR GET POST
 
 /static       StaticR   Static getStatic
+
+/build-version GitRevR GitRev getGitRev

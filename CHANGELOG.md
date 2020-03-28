@@ -4,9 +4,10 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 2020-03-21
+## [Unreleased changes]
 
-- Converted tmLanguage format files to JSON format
+- Fixed syntax highlighting bug in route file [#7](https://github.com/e-bigmoon/vscode-language-yesod/pull/7)
+- Converted tmLanguage format files to JSON format [#5](https://github.com/e-bigmoon/vscode-language-yesod/pull/5)
 
 ## [0.3.1] - 2020-03-17
 
