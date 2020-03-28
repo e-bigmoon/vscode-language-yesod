@@ -54,7 +54,7 @@
           ]
         },
         {
-          "match": "\\s+#$|^\\s*\\\\\\s+",
+          "match": "#$|^\\s*\\\\",
           "name": "keyword.operator.hamlet"
         }
       ]
