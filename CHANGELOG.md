@@ -4,6 +4,10 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2020-03-28
+
+- Fixed syntax highlighting bug in route file
+
 ## 2020-03-21
 
 - Converted tmLanguage format files to JSON format
