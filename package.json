@@ -6,9 +6,13 @@
   "publisher": "BIGMOON",
   "license": "BSD-3-Clause",
   "private": true,
+  "homepage": "https://github.com/e-bigmoon/vscode-language-yesod",
   "repository": {
     "type": "git",
     "url": "https://github.com/e-bigmoon/vscode-language-yesod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/e-bigmoon/vscode-language-yesod/issues"
   },
   "engines": {
     "vscode": "^1.42.1"
