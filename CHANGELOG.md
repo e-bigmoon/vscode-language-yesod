@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.4.0] - 2020-03-28
 
+- Added BSD 3-Clause license file [#11](https://github.com/e-bigmoon/vscode-language-yesod/issues/11)
 - Added syntax highlighting keyword to preserve white space [#9](https://github.com/e-bigmoon/vscode-language-yesod/pull/9)
 - Indent-css content integrated into cassius (indent-css.tmLanguage.json has been deleted) [#8](https://github.com/e-bigmoon/vscode-language-yesod/pull/8)
 - Fixed syntax highlighting bug in route file [#7](https://github.com/e-bigmoon/vscode-language-yesod/pull/7)
