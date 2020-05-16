@@ -19,6 +19,10 @@
         {
           "match": "(GET|HEAD|POST|PUT|DELETE|OPTIONS|PATCH)",
           "name": "entity.name.function"
+        },
+        {
+          "match": "![a-zA-Z0-9]+",
+          "name": "support.type.patterns"
         }
       ]
     }
