@@ -1,4 +1,4 @@
-Copyright <YEAR> <COPYRIGHT HOLDER>
+Copyright 2020 BIGMOON
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -10,7 +10,7 @@ modification, are permitted provided that the following conditions are met:
    this list of conditions and the following disclaimer in the documentation
    and/or other materials provided with the distribution.
 
-3. Neither the name of the copyright holder nor the names of its
+3. Neither the name of the BIGMOON nor the names of its
    contributors may be used to endorse or promote products derived from
    this software without specific prior written permission.
 
