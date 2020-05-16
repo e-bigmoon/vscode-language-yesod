@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased changes]
 
-## [0.5.0] - 2020-05-16
+## [0.6.0] - 2020-05-16
 
 - Added highlights for Route attributes [#10](https://github.com/e-bigmoon/vscode-language-yesod/issues/10)
 - Added BSD 3-Clause license file [#11](https://github.com/e-bigmoon/vscode-language-yesod/issues/11)
