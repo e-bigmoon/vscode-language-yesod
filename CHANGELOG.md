@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased changes]
 
+- Added BSD 3-Clause license file [#11](https://github.com/e-bigmoon/vscode-language-yesod/issues/11)
+
 ## [0.4.0] - 2020-03-28
 
 - Added syntax highlighting keyword to preserve white space [#9](https://github.com/e-bigmoon/vscode-language-yesod/pull/9)
