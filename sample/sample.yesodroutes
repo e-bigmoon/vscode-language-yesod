@@ -10,3 +10,22 @@
 /static       StaticR   Static getStatic
 
 /build-version GitRevR GitRev getGitRev
+
+-- Route attributes
+/admin1 Admin1R GET !admin
+/admin2 Admin2R GET !admin
+/admin3 Admin3R GET
+/auth AuthR Auth getAuth
+
+-- hierarchical routes
+/admin AdminR:
+    /1 Admin1R GET
+    /2 Admin2R GET
+    /3 Admin3R GET
+/auth AuthR Auth getAuth
+
+-- hierarchical routes with attributes
+/admin AdminR !admin:
+    /1 Admin1R GET !1
+    /2 Admin2R GET !2
+    /3 Admin3R GET !3
