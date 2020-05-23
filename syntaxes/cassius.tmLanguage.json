@@ -3,8 +3,8 @@
   "fileTypes": [ "cassius" ],
   "name": "Yesod Cassius",
   "patterns": [
-    { "include": "#indent-css" },
-    { "include": "#interpolation" }
+    { "include": "#interpolation" },
+    { "include": "#indent-css" }
   ],
   "repository": {
     "indent-css": {
@@ -1422,6 +1422,9 @@
         "property-values": {
           "patterns": [
             {
+              "include": "#interpolation"
+            },
+            {
               "include": "#commas"
             },
             {
@@ -1564,6 +1567,9 @@
         },
         "selector-innards": {
           "patterns": [
+            {
+              "include": "#interpolation"
+            },
             {
               "include": "#comment-block"
             },
