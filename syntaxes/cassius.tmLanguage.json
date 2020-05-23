@@ -1639,6 +1639,22 @@
                 },
                 "2": {
                   "patterns": [
+                    { 
+                      "include": "#interpolation"
+                    }
+                  ]
+                }
+              },
+              "match": "(#)(#{.+)",
+              "name": "entity.other.attribute-name.id.css"
+            },
+            {
+              "captures": {
+                "1": {
+                  "name": "punctuation.definition.entity.css"
+                },
+                "2": {
+                  "patterns": [
                     {
                       "include": "#escapes"
                     }
