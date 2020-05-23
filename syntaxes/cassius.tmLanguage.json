@@ -3,8 +3,8 @@
   "fileTypes": [ "cassius" ],
   "name": "Yesod Cassius",
   "patterns": [
-    { "include": "#indent-css" },
-    { "include": "#interpolation" }
+    { "include": "#interpolation" },
+    { "include": "#indent-css" }
   ],
   "repository": {
     "indent-css": {
@@ -1422,6 +1422,9 @@
         "property-values": {
           "patterns": [
             {
+              "include": "#interpolation"
+            },
+            {
               "include": "#commas"
             },
             {
@@ -1565,6 +1568,9 @@
         "selector-innards": {
           "patterns": [
             {
+              "include": "#interpolation"
+            },
+            {
               "include": "#comment-block"
             },
             {
@@ -1625,6 +1631,22 @@
               },
               "match": "(?x)\n(\\.)                                  # Valid class-name\n(\n  (?: [-a-zA-Z_0-9]|[^\\x00-\\x7F]     # Valid identifier characters\n    | \\\\(?:[0-9a-fA-F]{1,6}|.)       # Escape sequence\n  )+\n)                                      # Followed by either:\n(?= $                                  # - End of the line\n  | [\\s,.\\#)\\[:{>+~|]               # - Another selector\n  | /\\*                               # - A block comment\n)",
               "name": "entity.other.attribute-name.class.css"
+            },
+            {
+              "captures": {
+                "1": {
+                  "name": "punctuation.definition.entity.css"
+                },
+                "2": {
+                  "patterns": [
+                    { 
+                      "include": "#interpolation"
+                    }
+                  ]
+                }
+              },
+              "match": "(#)(#{.+)",
+              "name": "entity.other.attribute-name.id.css"
             },
             {
               "captures": {

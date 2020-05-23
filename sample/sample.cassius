@@ -10,3 +10,6 @@ section.blog
     h1
         color: #{headingColor}
         background-image: url(@{MyBackgroundR})
+
+##{copy}
+    margin: 1em
