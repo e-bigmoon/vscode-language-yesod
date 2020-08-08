@@ -1497,6 +1497,9 @@
           "name": "meta.property-list.css",
           "patterns": [
             {
+              "include": "#selector-innards"
+            },
+            {
               "include": "#rule-list-innards"
             }
           ]
@@ -1755,8 +1758,8 @@
               "include": "#functional-pseudo-classes"
             },
             {
-              "match": "(?x) (?<![@\\w-])\n(?=            # Custom element names must:\n  [a-z]        # - start with a lowercase ASCII letter,\n  \\w* -       # - contain at least one dash\n)\n(?:\n  (?![A-Z])    # No uppercase ASCII letters are allowed\n  [\\w-]       # Allow any other word character or dash\n)+\n(?![(\\w-])",
-              "name": "entity.name.tag.custom.css"
+              ":match": "(?x) (?<![@\\w-])\n(?=            # Custom element names must:\n  [a-z]        # - start with a lowercase ASCII letter,\n  \\w* -       # - contain at least one dash\n)\n(?:\n  (?![A-Z])    # No uppercase ASCII letters are allowed\n  [\\w-]       # Allow any other word character or dash\n)+\n(?![(\\w-])",
+              ":name": "entity.name.tag.custom.css"
             }
           ]
         },
