@@ -4,9 +4,12 @@ $# <-   source.yesod.hamlet meta.embedded.line.hamlet
 $#   ^  source.yesod.hamlet meta.embedded.line.hamlet
     <p>Some paragraph.
 $#  ^^^  source.yesod.hamlet meta.embedded.line.hamlet
+$#     ^^^^^^^^^^^^^^^  ???
     <ul>
 $#  ^^^^  source.yesod.hamlet meta.embedded.line.hamlet
         <li>Item 1
 $#      ^^^^  source.yesod.hamlet meta.embedded.line.hamlet
+$#          ^^^^^^  ???
         <li>Item 2
 $#      ^^^^  source.yesod.hamlet meta.embedded.line.hamlet
+$#          ^^^^^^  ???
