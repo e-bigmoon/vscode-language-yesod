@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased changes]
 
+- Enabled highlighting of nested indents. It is doubtful that this is the right change. [#2](https://github.com/e-bigmoon/vscode-language-yesod/issues/2)
 - Added variable interpolation highlights [#1](https://github.com/e-bigmoon/vscode-language-yesod/issues/1)
 
 ## [0.6.0] - 2020-05-16
