@@ -2,9 +2,11 @@ name: VSCode language Yesod CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+    branches:
+      - '*'
 
 jobs:
   test:
