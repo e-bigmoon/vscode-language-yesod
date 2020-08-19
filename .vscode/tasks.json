@@ -6,7 +6,7 @@
         {
             "label": "Run hamlet tests",
             "type": "shell",
-            "command": "vscode-tmgrammar-test -c -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t \"test/tests/hamlet/*.hamlet\"",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t \"test/tests/hamlet/*.hamlet\"",
             "group": "test",
             "presentation": {
                 "reveal": "always",
@@ -33,7 +33,7 @@
         {
             "label": "Run cassius tests",
             "type": "shell",
-            "command": "vscode-tmgrammar-test -c -s source.yesod.cassius -g syntaxes/cassius.tmLanguage.json -t \"test/tests/cassius/*.cassius\"",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.cassius -g syntaxes/cassius.tmLanguage.json -t \"test/tests/cassius/*.cassius\"",
             "group": "test",
             "presentation": {
                 "reveal": "always",
