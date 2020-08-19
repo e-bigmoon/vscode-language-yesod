@@ -1,7 +1,0 @@
-$# SYNTAX TEST "source.yesod.hamlet" "interpolation"
-<head>
-$# <-   source.yesod.hamlet meta.embedded.line.hamlet
-$#   ^  source.yesod.hamlet meta.embedded.line.hamlet
-    <title>#{title}
-$#  ^^^^^^^  source.yesod.hamlet meta.embedded.line.hamlet
-$#         ^^^^^^^^ ???
