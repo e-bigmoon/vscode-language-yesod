@@ -31,4 +31,4 @@ jobs:
         node-version: 12.x
 
     - name: Test Hamlet's syntax highlighting
-      run: npx vscode-tmgrammar-test -c -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
+      run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
