@@ -1,0 +1,9 @@
+$# SYNTAX TEST "source.yesod.hamlet" "interpolation"
+<head>
+$# <-   meta.embedded.line.hamlet
+$#   ^  meta.embedded.line.hamlet
+    <title>#{title}
+$#  ^^^^^^^  meta.embedded.line.hamlet
+$#         ^^  punctuation.section.embedded.begin.hamlet
+$#           ^^^^^  source.haskell
+$#                ^  punctuation.section.embedded.end.hamlet
