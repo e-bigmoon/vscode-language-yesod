@@ -1,13 +1,10 @@
 $# SYNTAX TEST "source.yesod.hamlet" "Preserve whitespace"
 <p>
-$# <- source.yesod.hamlet meta.embedded.line.hamlet
-$#^  source.yesod.hamlet meta.embedded.line.hamlet
+$# <- meta.embedded.line.hamlet
+$#^  meta.embedded.line.hamlet
     Paragraph #
-$#  ^^^^^^^^^  ???
 $#            ^  keyword.operator.hamlet
     <i>italic
-$#  ^^^  source.yesod.hamlet meta.embedded.line.hamlet
-$#     ^^^^^^  ???
+$#  ^^^  meta.embedded.line.hamlet
     \ end.
 $#  ^  keyword.operator.hamlet
-$#    ^^^^  ???
