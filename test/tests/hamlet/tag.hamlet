@@ -1,0 +1,12 @@
+$# SYNTAX TEST "source.yesod.hamlet" "simple tags"
+<body>
+$# <-   meta.embedded.line.hamlet
+$#   ^  meta.embedded.line.hamlet
+    <p>Some paragraph.
+$#  ^^^  meta.embedded.line.hamlet
+    <ul>
+$#  ^^^^  meta.embedded.line.hamlet
+        <li>Item 1
+$#      ^^^^  meta.embedded.line.hamlet
+        <li>Item 2
+$#      ^^^^  meta.embedded.line.hamlet

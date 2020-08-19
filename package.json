@@ -137,5 +137,8 @@
         "path": "./syntaxes/routes.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vscode-tmgrammar-test": "0.0.10"
   }
 }

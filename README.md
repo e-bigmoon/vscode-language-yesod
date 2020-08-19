@@ -26,6 +26,12 @@ lang | extension | example
 
 - [Language Yesod - VScode MarketPlace](https://marketplace.visualstudio.com/items?itemName=BIGMOON.language-yesod)
 
+## Test
+
+The following packages are used
+
+- [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test)
+
 ## Publish
 
 - [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
