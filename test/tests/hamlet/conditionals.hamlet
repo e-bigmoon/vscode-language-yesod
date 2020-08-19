@@ -1,0 +1,16 @@
+$# SYNTAX TEST "source.yesod.hamlet" "conditionals"
+$if isAdmin
+$# <- keyword.control.hamlet
+$# ^  keyword.control.hamlet
+    <p>Welcome to the admin section.
+$#  ^^^  meta.embedded.line.hamlet
+$elseif isLoggedIn
+$# <-    keyword.control.hamlet
+$#^^^^^  keyword.control.hamlet
+    <p>You are not the administrator.
+$#  ^^^  meta.embedded.line.hamlet
+$else
+$# <-  keyword.control.hamlet
+$#^^^  keyword.control.hamlet
+    <p>I don't know who you are. Please log in so I can decide if you get access.
+$#  ^^^  meta.embedded.line.hamlet
