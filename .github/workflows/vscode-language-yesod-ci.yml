@@ -1,0 +1,38 @@
+name: VSCode language Yesod CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-build-
+          ${{ runner.OS }}    # Runs a single command using the runners shell
+
+    - name: Setup Node ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Test Hamlet's syntax highlighting
+      run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
