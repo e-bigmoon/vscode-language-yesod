@@ -30,6 +30,11 @@
               "name": "entity.other.attribute-name"
             }
           ]
+        },
+        {
+          "begin": "^--",
+          "end": "\n",
+          "name": "comment.line"
         }
       ]
     }
