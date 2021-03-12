@@ -28,6 +28,10 @@
             {
               "match": "![a-zA-Z0-9]+",
               "name": "entity.other.attribute-name"
+            },
+            {
+              "match": "--.*",
+              "name": "comment.line"
             }
           ]
         },
