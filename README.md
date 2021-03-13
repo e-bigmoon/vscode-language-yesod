@@ -1,5 +1,8 @@
 # VS Code - Language Yesod
 
+<!-- [![VSCode language Yesod CI](https://github.com/e-bigmoon/vscode-language-yesod/actions/workflows/vscode-language-yesod-ci.yml/badge.svg?branch=master)](https://github.com/e-bigmoon/vscode-language-yesod/actions/workflows/vscode-language-yesod-ci.yml)
+[#23](https://github.com/e-bigmoon/vscode-language-yesod/issues/23) -->
+
 [Visual Studio Code](https://code.visualstudio.com/) syntax highlighting for the Haskell [Yesod](https://www.yesodweb.com/) web framework.
 
 ## Supported Languages
