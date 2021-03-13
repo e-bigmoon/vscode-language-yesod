@@ -4,7 +4,7 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased changes]
+## [0.7.0] - 2021-03-13
 
 - Added CI with Github actions
 - Enabled highlighting of nested indents. It is doubtful that this is the right change. [#2](https://github.com/e-bigmoon/vscode-language-yesod/issues/2)
