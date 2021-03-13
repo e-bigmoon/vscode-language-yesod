@@ -36,7 +36,7 @@
           ]
         },
         {
-          "begin": "^--",
+          "begin": "^\\s*--",
           "end": "\n",
           "name": "comment.line"
         }
