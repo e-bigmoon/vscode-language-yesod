@@ -1,0 +1,19 @@
+-- SYNTAX TEST "source.yesod.routes" "http methods"
+/foo1         Foo1R     GET
+--                      ^^^  entity.name.function
+/foo2         Foo2R     HEAD
+--                      ^^^  entity.name.function
+/foo3         Foo3R     POST
+--                      ^^^  entity.name.function
+/foo4         Foo4R     PUT
+--                      ^^^  entity.name.function
+/foo5         Foo5R     DELETE
+--                      ^^^  entity.name.function
+/foo6         Foo6R     OPTIONS
+--                      ^^^  entity.name.function
+/foo7         Foo7R     PATCH
+--                      ^^^  entity.name.function
+/multi        MultiR    GET POST
+--                      ^^^ ^^^^ entity.name.function
+/blog/#BlogId BlogPostR GET POST 
+--                      ^^^ ^^^^ entity.name.function

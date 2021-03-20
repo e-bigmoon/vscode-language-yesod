@@ -1,0 +1,9 @@
+-- SYNTAX TEST "source.yesod.routes" "handler"
+/foo1         Foo1R     GET
+--            ^^^^^  constant.other.handler
+/foo2         Foo2R     HEAD
+--            ^^^^^  constant.other.handler
+/multi        MultiR    GET POST
+--            ^^^^^^  constant.other.handler
+/blog/#BlogId BlogPostR GET POST 
+--            ^^^^^^^^^  constant.other.handler
