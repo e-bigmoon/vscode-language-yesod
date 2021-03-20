@@ -38,4 +38,4 @@ jobs:
       run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
 
     - name: Test Routes' syntax highlighting
-      run: npx vscode-tmgrammar-test -s source.yesod.routes -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.yesodroutes"
+      run: npx vscode-tmgrammar-test -s source.yesod.routes -g syntaxes/routes.tmLanguage.json -t "test/tests/routes/*.yesodroutes"
