@@ -1,4 +1,5 @@
 -- SYNTAX TEST "source.yesod.routes" "http methods"
+
 /foo1         Foo1R     GET
 --                      ^^^  entity.name.function
 /foo2         Foo2R     HEAD

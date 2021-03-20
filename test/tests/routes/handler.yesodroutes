@@ -1,4 +1,5 @@
 -- SYNTAX TEST "source.yesod.routes" "handler"
+
 /foo1         Foo1R     GET
 --            ^^^^^  constant.other.handler
 /foo2         Foo2R     HEAD

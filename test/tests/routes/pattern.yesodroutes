@@ -1,4 +1,5 @@
 -- SYNTAX TEST "source.yesod.routes" "pattern"
+
 /foo/bar   Foo1R GET
 /foo/#Text Foo2R GET
 --   ^^^^^ support.type.patterns
