@@ -1,11 +1,17 @@
 -- SYNTAX TEST "source.yesod.routes" "pattern"
 
 /foo/bar   Foo1R GET
+-- <-------------------- - support.type.patterns
 /foo/#Text Foo2R GET
+-- <----- - support.type.patterns
 --   ^^^^^ support.type.patterns
-
+--        ^^^^^^^^^^ - support.type.patterns
 /foo/bar    Foo1R GET
 !/foo/#Int  Foo2R GET
+-- <------ - support.type.patterns
 --    ^^^^ support.type.patterns
+--        ^^^^^^^^^^^ - support.type.patterns
 !/foo/#Text Foo3R GET
+-- <------ - support.type.patterns
 --    ^^^^^ support.type.patterns
+--         ^^^^^^^^^^ - support.type.patterns

@@ -1,10 +1,14 @@
 -- SYNTAX TEST "source.yesod.routes" "attribute"
 
 /admin AdminR !admin:
+-- <--------------  - entity.other.attribute-name
 --            ^^^^^^ entity.other.attribute-name
     /1 Admin1R GET !1
+--  ^^^^^^^^^^^^^^^  - entity.other.attribute-name
 --                 ^^ entity.other.attribute-name
     /2 Admin2R GET !2
+--  ^^^^^^^^^^^^^^^  - entity.other.attribute-name
 --                 ^^ entity.other.attribute-name  
     /3 Admin3R GET !3
+--  ^^^^^^^^^^^^^^^  - entity.other.attribute-name
 --                 ^^ entity.other.attribute-name
