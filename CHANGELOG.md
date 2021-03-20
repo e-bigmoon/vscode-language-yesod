@@ -4,6 +4,10 @@ All notable changes to the "language-yesod" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [Unreleased]
+
+- Added a test case for route declarations. [#24](https://github.com/e-bigmoon/vscode-language-yesod/pull/24)
+
 ## [0.7.0] - 2021-03-13
 
 - Added CI with Github actions

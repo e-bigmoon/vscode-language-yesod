@@ -1,0 +1,9 @@
+-- SYNTAX TEST "source.yesod.routes" "comment line"
+
+  -- comment
+-- <-- - comment.line
+--   ^^^^^^^^^^ comment.line
+
+/             HomeR     GET-- comment
+-- <--------------------------- - comment.line
+--                         ^^^^^^^^^^ comment.line

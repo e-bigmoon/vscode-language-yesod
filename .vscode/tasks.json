@@ -58,10 +58,38 @@
             }
         },
         {
+            "label": "Run routes tests",
+            "type": "shell",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.routes -g syntaxes/routes.tmLanguage.json -t \"test/tests/routes/*.yesodroutes\"",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^(ERROR)\\s([^:]+):(\\d+):(\\d+):(\\d+)\\s(.*)$",
+                        "severity": 1,
+                        "file": 2,
+                        "line": 3,
+                        "column": 4,
+                        "endColumn": 5,
+                        "message": 6
+                    }
+                ]
+            }
+        },
+        {
             "label": "Run all tests",
             "dependsOn": [
                 "Run hamlet tests",
-                "Run cassius tests"
+                "Run cassius tests",
+                "Run routes tests"
             ]
         }
     ]
