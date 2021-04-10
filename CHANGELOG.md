@@ -16,6 +16,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Hamlet TextMate rule improvements [#29](https://github.com/e-bigmoon/vscode-language-yesod/pull/29) @bi-functor
+- Fixed workflow in Github actions [#26](https://github.com/e-bigmoon/vscode-language-yesod/pull/26) @isao-takejib
 
 ## [0.7.0] - 2021-03-13
 
