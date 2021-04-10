@@ -34,6 +34,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Install dependencies
+      run: npm install
+
     - name: Test Hamlet's syntax highlighting
       run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
 
