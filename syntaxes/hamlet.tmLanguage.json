@@ -60,7 +60,7 @@
       "patterns": [
         {
           "match": "^\\s*\\$#.*$",
-          "name": "comment.line.hamlet"
+          "name": "comment.line.$#.hamlet"
         }
       ]
     },
@@ -72,14 +72,30 @@
             "1": { "name": "punctuation.definition.generic.begin.hamlet" },
             "2": { "name": "entity.name.tag.hamlet" }
           },
-          "end": "(>)",
+          "end": ">",
           "endCaptures": {
-            "1": { "name": "punctuation.definition.generic.end.hamlet" }
+            "0": { "name": "punctuation.definition.generic.end.hamlet" }
           },
           "name": "meta.tag.hamlet",
           "patterns": [
-            { "include": "#attribute" },
-            { "include": "#interpolation" }
+            { "include": "#interpolation" },
+            {
+              "begin": "(?<==)\"",
+              "end": "\"",
+              "name": "string.quoted.double.hamlet",
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
+            },
+            {
+              "begin": "(?<==)'",
+              "end": "'",
+              "name": "string.quoted.single.hamlet",
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
+            },
+            { "include": "#attribute" }
           ]
         }
       ],
