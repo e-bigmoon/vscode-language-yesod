@@ -102,8 +102,19 @@
         "attribute": {
           "patterns": [
             {
-              "match": ":[^:]+:[^>]+",
-              "name": "entity.other.attribute-name.hamlet"
+              "begin": ":",
+              "beginCaptures": {
+                "0": { "name": "punctuation.section.interpolation.begin.hamlet" }
+              },
+              "contentName": "source.haskell.embedded",
+              "end": "(:)(.+?)(?=(>|\\s))",
+              "endCaptures": {
+                "1": { "name": "punctuation.section.interpolation.end.hamlet" },
+                "2": { "name": "entity.other.attribute-name.hamlet" }
+              },
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
             }
           ]
         }
