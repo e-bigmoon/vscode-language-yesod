@@ -15,21 +15,19 @@
           "begin": "([_@#^\\*]|@\\?)\\{",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.section.embedded.begin.hamlet"
+              "name": "punctuation.section.interpolation.begin.hamlet"
             }
           },
-          "contentName": "source.haskell",
+          "contentName": "source.haskell.embedded",
           "end": "(\\})",
           "endCaptures": {
             "0": {
-              "name": "punctuation.section.embedded.end.hamlet"
+              "name": "punctuation.section.interpolation.end.hamlet"
             }
           },
-          "name": "meta.embedded.line.hamlet",
+          "name": "meta.interpolation.hamlet",
           "patterns": [
-            {
-              "include": "source.haskell"
-            }
+            { "include": "source.haskell" }
           ]
         }
       ]
@@ -45,12 +43,11 @@
           "beginCaptures": {
             "0": { "name": "keyword.control.hamlet" }
           },
+          "contentName": "source.haskell.embedded",
           "end": "\\n",
-          "name": "meta.embedded.line.hamlet",
+          "name": "meta.interpolation.hamlet",
           "patterns": [
-            {
-              "include": "source.haskell"
-            }
+            { "include": "source.haskell" }
           ]
         },
         {
@@ -63,7 +60,7 @@
       "patterns": [
         {
           "match": "^\\s*\\$#.*$",
-          "name": "comment.line.$#.hamlet"
+          "name": "comment.line.hamlet"
         }
       ]
     },
