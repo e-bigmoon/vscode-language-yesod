@@ -67,9 +67,16 @@
     "tag": {
       "patterns": [
         {
-          "begin": "<[a-z]+",
-          "end": ">",
-          "name": "meta.embedded.line.hamlet",
+          "begin": "(<)([a-z]+)",
+          "beginCaptures": {
+            "1": { "name": "punctuation.definition.generic.begin.hamlet" },
+            "2": { "name": "entity.name.tag.hamlet" }
+          },
+          "end": "(>)",
+          "endCaptures": {
+            "1": { "name": "punctuation.definition.generic.end.hamlet" }
+          },
+          "name": "meta.tag.hamlet",
           "patterns": [
             { "include": "#attribute" },
             { "include": "#interpolation" },
