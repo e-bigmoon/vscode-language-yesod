@@ -79,22 +79,7 @@
           "name": "meta.tag.hamlet",
           "patterns": [
             { "include": "#attribute" },
-            { "include": "#interpolation" },
-            {
-              "match": "\\s(#|\\.)([^\\s>]+)",
-              "captures": {
-                "1": { "name": "entity.other.attribute-name.hamlet" },
-                "2": {
-                  "patterns": [
-                    { "include": "#interpolation" },
-                    {
-                      "match": "\\w",
-                      "name": "entity.other.attribute-name.hamlet"
-                    }
-                  ]
-                }
-              }
-            }
+            { "include": "#interpolation" }
           ]
         }
       ],
@@ -114,6 +99,15 @@
               },
               "patterns": [
                 { "include": "#interpolation" }
+              ]
+            },
+            {
+              "begin": "\\s(#|\\.)",
+              "end": "(?=(>|\\s))",
+              "name": "entity.other.attribute-name.hamlet",
+              "patterns": [
+                { "include": "#interpolation" },
+                { "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]" }
               ]
             }
           ]
