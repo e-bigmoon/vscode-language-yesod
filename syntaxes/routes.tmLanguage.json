@@ -20,7 +20,7 @@
               "name": "meta.url.route.yesod",
               "patterns": [
                 {
-                  "match": "[#*+]!?[A-Z][a-zA-Z0-9]+",
+                  "match": "[#*+]!?[A-Z][a-zA-Z0-9-]+",
                   "name": "support.type.patterns"
                 },
                 {
