@@ -15,21 +15,19 @@
           "begin": "([_@#^\\*]|@\\?)\\{",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.section.embedded.begin.hamlet"
+              "name": "punctuation.section.interpolation.begin.hamlet"
             }
           },
-          "contentName": "source.haskell",
+          "contentName": "source.haskell.embedded",
           "end": "(\\})",
           "endCaptures": {
             "0": {
-              "name": "punctuation.section.embedded.end.hamlet"
+              "name": "punctuation.section.interpolation.end.hamlet"
             }
           },
-          "name": "meta.embedded.line.hamlet",
+          "name": "meta.interpolation.hamlet",
           "patterns": [
-            {
-              "include": "source.haskell"
-            }
+            { "include": "source.haskell" }
           ]
         }
       ]
@@ -45,12 +43,11 @@
           "beginCaptures": {
             "0": { "name": "keyword.control.hamlet" }
           },
+          "contentName": "source.haskell.embedded",
           "end": "\\n",
-          "name": "meta.embedded.line.hamlet",
+          "name": "meta.interpolation.hamlet",
           "patterns": [
-            {
-              "include": "source.haskell"
-            }
+            { "include": "source.haskell" }
           ]
         },
         {
@@ -70,27 +67,35 @@
     "tag": {
       "patterns": [
         {
-          "begin": "<[a-z]+",
+          "begin": "(<)([a-z]+)",
+          "beginCaptures": {
+            "1": { "name": "punctuation.definition.generic.begin.hamlet" },
+            "2": { "name": "entity.name.tag.hamlet" }
+          },
           "end": ">",
-          "name": "meta.embedded.line.hamlet",
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.generic.end.hamlet" }
+          },
+          "name": "meta.tag.hamlet",
           "patterns": [
-            { "include": "#attribute" },
             { "include": "#interpolation" },
             {
-              "match": "\\s(#|\\.)([^\\s>]+)",
-              "captures": {
-                "1": { "name": "entity.other.attribute-name.hamlet" },
-                "2": {
-                  "patterns": [
-                    { "include": "#interpolation" },
-                    {
-                      "match": "\\w",
-                      "name": "entity.other.attribute-name.hamlet"
-                    }
-                  ]
-                }
-              }
-            }
+              "begin": "(?<==)\"",
+              "end": "\"",
+              "name": "string.quoted.double.hamlet",
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
+            },
+            {
+              "begin": "(?<==)'",
+              "end": "'",
+              "name": "string.quoted.single.hamlet",
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
+            },
+            { "include": "#attribute" }
           ]
         }
       ],
@@ -98,8 +103,28 @@
         "attribute": {
           "patterns": [
             {
-              "match": ":[^:]+:[^>]+",
-              "name": "entity.other.attribute-name.hamlet"
+              "begin": ":",
+              "beginCaptures": {
+                "0": { "name": "punctuation.section.interpolation.begin.hamlet" }
+              },
+              "contentName": "source.haskell.embedded",
+              "end": "(:)(.*?)(?=(>|\\s))",
+              "endCaptures": {
+                "1": { "name": "punctuation.section.interpolation.end.hamlet" },
+                "2": { "name": "entity.other.attribute-name.hamlet" }
+              },
+              "patterns": [
+                { "include": "#interpolation" }
+              ]
+            },
+            {
+              "begin": "\\s(#|\\.)",
+              "end": "(?=(>|\\s))",
+              "name": "entity.other.attribute-name.hamlet",
+              "patterns": [
+                { "include": "#interpolation" },
+                { "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]" }
+              ]
             }
           ]
         }
