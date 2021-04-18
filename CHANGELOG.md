@@ -6,7 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Added a test case for route declarations. [#24](https://github.com/e-bigmoon/vscode-language-yesod/pull/24)
+## [0.8.0] - 2021-04-18
+
+### Added
+
+- Support composite types in routes [#28](https://github.com/e-bigmoon/vscode-language-yesod/pull/28) @bi-functor
+- Added a test case for route declarations. [#24](https://github.com/e-bigmoon/vscode-language-yesod/pull/24) @isao-takejib
+
+### Changed
+
+- Hamlet TextMate rule improvements [#29](https://github.com/e-bigmoon/vscode-language-yesod/pull/29) @bi-functor
 
 ## [0.7.0] - 2021-03-13
 
