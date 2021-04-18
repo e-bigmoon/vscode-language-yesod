@@ -38,3 +38,8 @@ The following packages are used
 ## Publish
 
 - [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+
+## Links
+
+- [Syntax Highlight Guide | Visual Studio Code Extension API](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
+- [Regular Expressions - TextMate 1.5.1](https://macromates.com/manual/en/regular_expressions)
