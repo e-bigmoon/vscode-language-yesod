@@ -86,7 +86,7 @@
           "begin": "(<)([a-z0-9]+)",
           "beginCaptures": {
             "1": {
-              "name": "punctuation.definition.generic.begin.hamlet"
+              "name": "punctuation.definition.tag.begin.hamlet"
             },
             "2": {
               "name": "entity.name.tag.hamlet"
@@ -95,7 +95,7 @@
           "end": ">",
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.generic.end.hamlet"
+              "name": "punctuation.definition.tag.end.hamlet"
             }
           },
           "name": "meta.tag.hamlet",
@@ -125,13 +125,7 @@
             },
             {
               "include": "#attribute"
-            }
-          ]
-        }
-      ],
-      "repository": {
-        "attribute": {
-          "patterns": [
+            },
             {
               "begin": ":",
               "beginCaptures": {
@@ -140,13 +134,10 @@
                 }
               },
               "contentName": "source.haskell.embedded",
-              "end": "(:)(.*?)(?=(>|\\s))",
+              "end": ":",
               "endCaptures": {
-                "1": {
+                "0": {
                   "name": "punctuation.section.interpolation.end.hamlet"
-                },
-                "2": {
-                  "name": "entity.other.attribute-name.hamlet"
                 }
               },
               "patterns": [
@@ -154,9 +145,15 @@
                   "include": "#interpolation"
                 }
               ]
-            },
+            }
+          ]
+        }
+      ],
+      "repository": {
+        "attribute": {
+          "patterns": [
             {
-              "begin": "(?<=\\s)#",
+              "begin": "(?<=\\s|:)#",
               "beginCaptures": {
                 "0": {
                   "name": "entity.other.attribute-name.hamlet"
@@ -175,7 +172,7 @@
               ]
             },
             {
-              "begin": "(?<=\\s)\\.",
+              "begin": "(?<=\\s|:)\\.",
               "beginCaptures": {
                 "0": {
                   "name": "entity.other.attribute-name.hamlet"
@@ -194,7 +191,7 @@
               ]
             },
             {
-              "begin": "(?<=\\s)(\\w+)(?=\\s*=)",
+              "begin": "(?<=\\s|:)(\\w+)(?=\\s*=)",
               "beginCaptures": {
                 "0": {
                   "name": "entity.other.attribute-name.hamlet"
