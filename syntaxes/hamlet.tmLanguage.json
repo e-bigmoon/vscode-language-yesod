@@ -156,9 +156,52 @@
               ]
             },
             {
-              "begin": "\\s(#|\\.)",
+              "begin": "(?<=\\s)#",
+              "beginCaptures": {
+                "0": {
+                  "name": "entity.other.attribute-name.hamlet"
+                }
+              },
               "end": "(?=(>|\\s))",
-              "name": "entity.other.attribute-name.hamlet",
+              "name": "meta.attribute.id.hamlet",
+              "patterns": [
+                {
+                  "include": "#interpolation"
+                },
+                {
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "entity.other.attribute-name.hamlet"
+                }
+              ]
+            },
+            {
+              "begin": "(?<=\\s)\\.",
+              "beginCaptures": {
+                "0": {
+                  "name": "entity.other.attribute-name.hamlet"
+                }
+              },
+              "end": "(?=(>|\\s))",
+              "name": "meta.attribute.class.hamlet",
+              "patterns": [
+                {
+                  "include": "#interpolation"
+                },
+                {
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "entity.other.attribute-name.hamlet"
+                }
+              ]
+            },
+            {
+              "begin": "(?<=\\s)(\\w+)(?=\\s*=)",
+              "beginCaptures": {
+                "0": {
+                  "name": "entity.other.attribute-name.hamlet"
+                }
+              },
+              "end": "(?=\\s*+[^=\\s])",
+              "name": "meta.attribute.$1.hamlet",
               "patterns": [
                 {
                   "include": "#interpolation"
