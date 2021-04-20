@@ -83,7 +83,7 @@
     "tag": {
       "patterns": [
         {
-          "begin": "(<)([a-z]+)",
+          "begin": "(<)([a-z0-9]+)",
           "beginCaptures": {
             "1": {
               "name": "punctuation.definition.generic.begin.hamlet"
