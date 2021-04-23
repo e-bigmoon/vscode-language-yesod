@@ -104,7 +104,7 @@
               "include": "#interpolation"
             },
             {
-              "begin": "(?<==)\"",
+              "begin": "(?<=\\s*=)\"",
               "end": "\"",
               "name": "string.quoted.double.hamlet",
               "patterns": [
@@ -114,7 +114,7 @@
               ]
             },
             {
-              "begin": "(?<==)'",
+              "begin": "(?<=\\s*=)'",
               "end": "'",
               "name": "string.quoted.single.hamlet",
               "patterns": [
@@ -156,18 +156,18 @@
               "begin": "(?<=\\s|:)#",
               "beginCaptures": {
                 "0": {
-                  "name": "entity.other.attribute-name.hamlet"
+                  "name": "meta.attribute.id.hamlet"
                 }
               },
               "end": "(?=(>|\\s))",
-              "name": "meta.attribute.id.hamlet",
+              "name": "entity.other.attribute-name.hamlet",
               "patterns": [
                 {
                   "include": "#interpolation"
                 },
                 {
                   "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
-                  "name": "entity.other.attribute-name.hamlet"
+                  "name": "meta.attribute.id.hamlet"
                 }
               ]
             },
@@ -175,38 +175,43 @@
               "begin": "(?<=\\s|:)\\.",
               "beginCaptures": {
                 "0": {
-                  "name": "entity.other.attribute-name.hamlet"
+                  "name": "meta.attribute.class.hamlet"
                 }
               },
               "end": "(?=(>|\\s))",
-              "name": "meta.attribute.class.hamlet",
+              "name": "entity.other.attribute-name.hamlet",
               "patterns": [
                 {
                   "include": "#interpolation"
                 },
                 {
                   "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
-                  "name": "entity.other.attribute-name.hamlet"
+                  "name": "meta.attribute.class.hamlet"
                 }
               ]
             },
             {
-              "begin": "(?<=\\s|:)(\\w+)(?=\\s*=)",
+              "begin": "(?<=\\s|:)(\\w+)(?=\\s|=|>)",
               "beginCaptures": {
-                "0": {
-                  "name": "entity.other.attribute-name.hamlet"
+                "1": {
+                  "name": "meta.attribute.$1.hamlet"
                 }
               },
-              "end": "(?=\\s*+[^=\\s])",
-              "name": "meta.attribute.$1.hamlet",
+              "end": "(?=\\s*[=\\s>])",
+              "name": "entity.other.attribute-name.hamlet",
               "patterns": [
                 {
                   "include": "#interpolation"
                 },
                 {
-                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]"
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "meta.attribute.$1.hamlet"
                 }
               ]
+            },
+            {
+              "match": "=",
+              "name": "punctuation.separator.key-value.hamlet"
             }
           ]
         }
