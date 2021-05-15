@@ -1,12 +1,21 @@
 $# SYNTAX TEST "source.yesod.hamlet" "simple tags"
 <body>
-$# <-   meta.embedded.line.hamlet
-$#   ^  meta.embedded.line.hamlet
+$# <-  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$# <~----  meta.tag.hamlet entity.name.tag.hamlet
+$#   ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
     <p>Some paragraph.
-$#  ^^^  meta.embedded.line.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#   ^  meta.tag.hamlet entity.name.tag.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
     <ul>
-$#  ^^^^  meta.embedded.line.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#   ^^  meta.tag.hamlet entity.name.tag.hamlet
+$#     ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
         <li>Item 1
-$#      ^^^^  meta.embedded.line.hamlet
+$#      ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#       ^^  meta.tag.hamlet entity.name.tag.hamlet
+$#         ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
         <li>Item 2
-$#      ^^^^  meta.embedded.line.hamlet
+$#      ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#       ^^  meta.tag.hamlet entity.name.tag.hamlet
+$#         ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
