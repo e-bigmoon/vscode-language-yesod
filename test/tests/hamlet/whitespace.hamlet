@@ -1,10 +1,13 @@
 $# SYNTAX TEST "source.yesod.hamlet" "Preserve whitespace"
 <p>
-$# <- meta.embedded.line.hamlet
-$#^  meta.embedded.line.hamlet
+$# <-  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$# <~-  meta.tag.hamlet entity.name.tag.hamlet
+$# <~~-  meta.tag.hamlet punctuation.definition.generic.end.hamlet
     Paragraph #
 $#            ^  keyword.operator.hamlet
     <i>italic
-$#  ^^^  meta.embedded.line.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#   ^  meta.tag.hamlet entity.name.tag.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
     \ end.
 $#  ^  keyword.operator.hamlet
