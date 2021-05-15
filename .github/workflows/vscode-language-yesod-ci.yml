@@ -20,15 +20,6 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-#    - name: Cache node_modules
-#      uses: actions/cache@v2
-#      with:
-#        path: node_modules
-#        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-#        restore-keys: |
-#          ${{ runner.OS }}-build-
-#          ${{ runner.OS }}    # Runs a single command using the runners shell
-
     - name: Setup Node ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
