@@ -9,7 +9,7 @@ $doctype 5
 <html>
     <head>
         <title>#{pageTitle} - My Site
-        <link rel=stylesheet href=@{Stylesheet}>
+        <link rel=stylesheet href=@{Stylesheet} data-extra="something">
     <body>
         <h1 .page-title>#{pageTitle}
         <p>Here is a list of your friends:
@@ -62,7 +62,7 @@ $doctype 5
     <div ##{xxx}>
 
     <p>@{Stylesheet}
-    <a href=@?{(SomePage, [("page", pack $ show $ currPage + 1)])} data-link-extra="something">
+    <a href=@?{(SomePage, [("page", pack $ show $ currPage + 1)])}>
     <p>_{Hello}
     <p>^{addBling}
 
