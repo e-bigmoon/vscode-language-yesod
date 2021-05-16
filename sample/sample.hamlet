@@ -62,7 +62,7 @@ $doctype 5
     <div ##{xxx}>
 
     <p>@{Stylesheet}
-    <a href=@?{(SomePage, [("page", pack $ show $ currPage + 1)])}>
+    <a href=@?{(SomePage, [("page", pack $ show $ currPage + 1)])} data-link-extra="something">
     <p>_{Hello}
     <p>^{addBling}
 
@@ -70,7 +70,7 @@ $doctype 5
     <input type=checkbox checked>
     
     <p #paragraphid .class1 .class2>
-    <img src=https://example.com/images/a.jpg>
+    <img src="https://example.com/images/a.jpg">
 
     <input type=checkbox :isChecked:checked>
     <p :isRed:style="color:red">

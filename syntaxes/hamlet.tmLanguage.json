@@ -191,7 +191,7 @@
               ]
             },
             {
-              "begin": "(?<=\\s|:)(\\w+)(?=\\s|=|>)",
+              "begin": "(?<=\\s|:)([\\w-]+)(?=\\s|=|>)",
               "beginCaptures": {
                 "1": {
                   "name": "meta.attribute.$1.hamlet"
