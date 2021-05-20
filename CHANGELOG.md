@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Changed
 
+- Hamlet attribute scope names [#31](https://github.com/e-bigmoon/vscode-language-yesod/pull/31) @bi-functor
 - Fix existing test cases for hamlet (ver 0.8.0) [#34](https://github.com/e-bigmoon/vscode-language-yesod/pull/34) @isao-takejib
 - Fixed workflow in Github actions [#26](https://github.com/e-bigmoon/vscode-language-yesod/pull/26) @isao-takejib
 
