@@ -1,21 +1,21 @@
 $# SYNTAX TEST "source.yesod.hamlet" "simple tags"
 <body>
-$# <-  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$# <-  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $# <~----  meta.tag.hamlet entity.name.tag.hamlet
-$#   ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
+$#   ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
     <p>Some paragraph.
-$#  ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#   ^  meta.tag.hamlet entity.name.tag.hamlet
-$#    ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
     <ul>
-$#  ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#   ^^  meta.tag.hamlet entity.name.tag.hamlet
-$#     ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
+$#     ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
         <li>Item 1
-$#      ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#      ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#       ^^  meta.tag.hamlet entity.name.tag.hamlet
-$#         ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
+$#         ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
         <li>Item 2
-$#      ^  meta.tag.hamlet punctuation.definition.generic.begin.hamlet
+$#      ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#       ^^  meta.tag.hamlet entity.name.tag.hamlet
-$#         ^  meta.tag.hamlet punctuation.definition.generic.end.hamlet
+$#         ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
