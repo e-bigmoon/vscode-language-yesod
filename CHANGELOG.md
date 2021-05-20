@@ -6,6 +6,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Changed
+
+- Fix existing test cases for hamlet (ver 0.8.0) [#34](https://github.com/e-bigmoon/vscode-language-yesod/pull/34) @isao-takejib
+- Fixed workflow in Github actions [#26](https://github.com/e-bigmoon/vscode-language-yesod/pull/26) @isao-takejib
+
 ## [0.8.0] - 2021-04-18
 
 ### Added
@@ -16,7 +21,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Hamlet TextMate rule improvements [#29](https://github.com/e-bigmoon/vscode-language-yesod/pull/29) @bi-functor
-- Fixed workflow in Github actions [#26](https://github.com/e-bigmoon/vscode-language-yesod/pull/26) @isao-takejib
 
 ## [0.7.0] - 2021-03-13
 
