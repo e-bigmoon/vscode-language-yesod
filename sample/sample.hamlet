@@ -9,7 +9,7 @@ $doctype 5
 <html>
     <head>
         <title>#{pageTitle} - My Site
-        <link rel=stylesheet href=@{Stylesheet}>
+        <link rel=stylesheet href=@{Stylesheet} data-extra="something">
     <body>
         <h1 .page-title>#{pageTitle}
         <p>Here is a list of your friends:
@@ -70,7 +70,7 @@ $doctype 5
     <input type=checkbox checked>
     
     <p #paragraphid .class1 .class2>
-    <img src=https://example.com/images/a.jpg>
+    <img src="https://example.com/images/a.jpg">
 
     <input type=checkbox :isChecked:checked>
     <p :isRed:style="color:red">

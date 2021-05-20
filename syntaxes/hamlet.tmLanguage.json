@@ -1,12 +1,22 @@
 {
   "scopeName": "source.yesod.hamlet",
-  "fileTypes": ["hamlet"],
+  "fileTypes": [
+    "hamlet"
+  ],
   "name": "Yesod Hamlet",
   "patterns": [
-    { "include": "#interpolation" },
-    { "include": "#keyword" },
-    { "include": "#comment" },
-    { "include": "#tag" }
+    {
+      "include": "#interpolation"
+    },
+    {
+      "include": "#keyword"
+    },
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#tag"
+    }
   ],
   "repository": {
     "interpolation": {
@@ -27,7 +37,9 @@
           },
           "name": "meta.interpolation.hamlet",
           "patterns": [
-            { "include": "source.haskell" }
+            {
+              "include": "source.haskell"
+            }
           ]
         }
       ]
@@ -41,13 +53,17 @@
         {
           "begin": "\\$(if|elseif|maybe|forall|case|of|with)\\s+",
           "beginCaptures": {
-            "0": { "name": "keyword.control.hamlet" }
+            "0": {
+              "name": "keyword.control.hamlet"
+            }
           },
           "contentName": "source.haskell.embedded",
           "end": "\\n",
           "name": "meta.interpolation.hamlet",
           "patterns": [
-            { "include": "source.haskell" }
+            {
+              "include": "source.haskell"
+            }
           ]
         },
         {
@@ -67,35 +83,69 @@
     "tag": {
       "patterns": [
         {
-          "begin": "(<)([a-z]+)",
+          "begin": "(<)([a-z0-9]+)",
           "beginCaptures": {
-            "1": { "name": "punctuation.definition.generic.begin.hamlet" },
-            "2": { "name": "entity.name.tag.hamlet" }
+            "1": {
+              "name": "punctuation.definition.tag.begin.hamlet"
+            },
+            "2": {
+              "name": "entity.name.tag.hamlet"
+            }
           },
           "end": ">",
           "endCaptures": {
-            "0": { "name": "punctuation.definition.generic.end.hamlet" }
+            "0": {
+              "name": "punctuation.definition.tag.end.hamlet"
+            }
           },
           "name": "meta.tag.hamlet",
           "patterns": [
-            { "include": "#interpolation" },
             {
-              "begin": "(?<==)\"",
+              "include": "#interpolation"
+            },
+            {
+              "begin": "(?<=\\s*=)\"",
               "end": "\"",
               "name": "string.quoted.double.hamlet",
               "patterns": [
-                { "include": "#interpolation" }
+                {
+                  "include": "#interpolation"
+                }
               ]
             },
             {
-              "begin": "(?<==)'",
+              "begin": "(?<=\\s*=)'",
               "end": "'",
               "name": "string.quoted.single.hamlet",
               "patterns": [
-                { "include": "#interpolation" }
+                {
+                  "include": "#interpolation"
+                }
               ]
             },
-            { "include": "#attribute" }
+            {
+              "include": "#attribute"
+            },
+            {
+              "begin": ":",
+              "beginCaptures": {
+                "0": {
+                  "name": "punctuation.section.interpolation.begin.hamlet"
+                }
+              },
+              "contentName": "source.haskell.embedded",
+              "end": ":",
+              "endCaptures": {
+                "0": {
+                  "name": "punctuation.section.interpolation.end.hamlet"
+                }
+              },
+              "patterns": [
+                {
+                  "include": "#interpolation"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -103,28 +153,65 @@
         "attribute": {
           "patterns": [
             {
-              "begin": ":",
+              "begin": "(?<=\\s|:)#",
               "beginCaptures": {
-                "0": { "name": "punctuation.section.interpolation.begin.hamlet" }
+                "0": {
+                  "name": "meta.attribute.id.hamlet"
+                }
               },
-              "contentName": "source.haskell.embedded",
-              "end": "(:)(.*?)(?=(>|\\s))",
-              "endCaptures": {
-                "1": { "name": "punctuation.section.interpolation.end.hamlet" },
-                "2": { "name": "entity.other.attribute-name.hamlet" }
-              },
-              "patterns": [
-                { "include": "#interpolation" }
-              ]
-            },
-            {
-              "begin": "\\s(#|\\.)",
               "end": "(?=(>|\\s))",
               "name": "entity.other.attribute-name.hamlet",
               "patterns": [
-                { "include": "#interpolation" },
-                { "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]" }
+                {
+                  "include": "#interpolation"
+                },
+                {
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "meta.attribute.id.hamlet"
+                }
               ]
+            },
+            {
+              "begin": "(?<=\\s|:)\\.",
+              "beginCaptures": {
+                "0": {
+                  "name": "meta.attribute.class.hamlet"
+                }
+              },
+              "end": "(?=(>|\\s))",
+              "name": "entity.other.attribute-name.hamlet",
+              "patterns": [
+                {
+                  "include": "#interpolation"
+                },
+                {
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "meta.attribute.class.hamlet"
+                }
+              ]
+            },
+            {
+              "begin": "(?<=\\s|:)([\\w-]+)(?=\\s|=|>)",
+              "beginCaptures": {
+                "1": {
+                  "name": "meta.attribute.$1.hamlet"
+                }
+              },
+              "end": "(?=\\s*[=\\s>])",
+              "name": "entity.other.attribute-name.hamlet",
+              "patterns": [
+                {
+                  "include": "#interpolation"
+                },
+                {
+                  "match": "-?[_a-zA-Z]+[_a-zA-Z0-9-]",
+                  "name": "meta.attribute.$1.hamlet"
+                }
+              ]
+            },
+            {
+              "match": "=",
+              "name": "punctuation.separator.key-value.hamlet"
             }
           ]
         }
