@@ -28,8 +28,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Get Haskell tmLanguage
+      run: bash ./test/resources/getHaskelltmLanguage.sh
+
     - name: Test Hamlet's syntax highlighting
-      run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
+      run: npx vscode-tmgrammar-test -s source.yesod.hamlet -g test/resources/haskell.tmLanguage.json -g syntaxes/hamlet.tmLanguage.json -t "test/tests/hamlet/*.hamlet"
 
     - name: Test Routes' syntax highlighting
-      run: npx vscode-tmgrammar-test -s source.yesod.routes -g syntaxes/routes.tmLanguage.json -t "test/tests/routes/*.yesodroutes"
+      run: npx vscode-tmgrammar-test -s source.yesod.routes -g test/resources/haskell.tmLanguage.json -g syntaxes/routes.tmLanguage.json -t "test/tests/routes/*.yesodroutes"
