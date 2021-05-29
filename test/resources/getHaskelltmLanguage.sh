@@ -11,5 +11,7 @@ HS_SYNTAX_DIR="syntaxes"
 HS_LANGUAGE_FILE="haskell.YAML-tmLanguage"
 HS_LANGUAGE_JSON="haskell.tmLanguage.json"
 
-wget -P "${SCRIPT_DIR}" "${REPO}/${TAG}/${HS_SYNTAX_DIR}/${HS_LANGUAGE_FILE}"
-yq eval . "${SCRIPT_DIR}/${HS_LANGUAGE_FILE}" -j > "${SCRIPT_DIR}/${HS_LANGUAGE_JSON}"
+if [ ! -f "${SCRIPT_DIR}/${HS_LANGUAGE_FILE}" ]; then
+    wget -P "${SCRIPT_DIR}" "${REPO}/${TAG}/${HS_SYNTAX_DIR}/${HS_LANGUAGE_FILE}"
+    yq eval . "${SCRIPT_DIR}/${HS_LANGUAGE_FILE}" -j > "${SCRIPT_DIR}/${HS_LANGUAGE_JSON}"
+fi
