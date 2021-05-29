@@ -29,7 +29,7 @@ jobs:
       run: npm install
 
     - name: Install yq
-      run: sudo apt install yq
+      run: sudo snap install yq
 
     - name: Get Haskell tmLanguage
       run: bash ./test/resources/getHaskelltmLanguage.sh
