@@ -1,27 +1,33 @@
 {
   "scopeName": "source.yesod.julius",
-  "fileTypes": ["julius"],
+  "fileTypes": [
+    "julius"
+  ],
   "name": "Yesod Julius",
   "patterns": [
-    { "include": "source.js" },
-    { "include": "#interpolation" }
-  ],
-  "repository" :{
-    "interpolation": {
+    {
+      "begin": "([@#^]|@\\?)\\{",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.section.interpolation.begin.julius"
+        }
+      },
+      "contentName": "source.haskell.embedded",
+      "end": "\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.interpolation.end.julius"
+        }
+      },
+      "name": "meta.interpolation.julius",
       "patterns": [
         {
-          "match": "([#@]){(.+)}",
-          "captures": {
-            "1": {
-              "name": "entity.other.attribute-name.yesod"
-            },
-            "2": {
-              "name": "constant.other.yesod"
-            }
-          },
-          "name": "interpolation.yesod"
+          "include": "source.haskell"
         }
       ]
+    },
+    {
+      "include": "source.js"
     }
-  }
+  ]
 }
