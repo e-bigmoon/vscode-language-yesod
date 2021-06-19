@@ -4,9 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Get Haskell tmLanguage",
+            "type": "shell",
+            "command": "bash ./test/resources/getHaskelltmLanguage.sh",
+        },
+        {
             "label": "Run hamlet tests",
             "type": "shell",
-            "command": "npx vscode-tmgrammar-test -c -s source.yesod.hamlet -g syntaxes/hamlet.tmLanguage.json -t \"test/tests/hamlet/*.hamlet\"",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.hamlet -g test/resources/haskell.tmLanguage.json -g syntaxes/hamlet.tmLanguage.json -t \"test/tests/hamlet/*.hamlet\"",
             "group": "test",
             "presentation": {
                 "reveal": "always",
@@ -28,12 +33,15 @@
                         "message": 6
                     }
                 ]
-            }
+            },
+            "dependsOn": [
+                "Get Haskell tmLanguage"
+            ]
         },
         {
             "label": "Run cassius tests",
             "type": "shell",
-            "command": "npx vscode-tmgrammar-test -c -s source.yesod.cassius -g syntaxes/cassius.tmLanguage.json -t \"test/tests/cassius/*.cassius\"",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.cassius -g test/resources/haskell.tmLanguage.json -g syntaxes/cassius.tmLanguage.json -t \"test/tests/cassius/*.cassius\"",
             "group": "test",
             "presentation": {
                 "reveal": "always",
@@ -55,12 +63,15 @@
                         "message": 6
                     }
                 ]
-            }
+            },
+            "dependsOn": [
+                "Get Haskell tmLanguage"
+            ]
         },
         {
             "label": "Run routes tests",
             "type": "shell",
-            "command": "npx vscode-tmgrammar-test -c -s source.yesod.routes -g syntaxes/routes.tmLanguage.json -t \"test/tests/routes/*.yesodroutes\"",
+            "command": "npx vscode-tmgrammar-test -c -s source.yesod.routes -g test/resources/haskell.tmLanguage.json -g syntaxes/routes.tmLanguage.json -t \"test/tests/routes/*.yesodroutes\"",
             "group": "test",
             "presentation": {
                 "reveal": "always",
@@ -82,7 +93,10 @@
                         "message": 6
                     }
                 ]
-            }
+            },
+            "dependsOn": [
+                "Get Haskell tmLanguage"
+            ]
         },
         {
             "label": "Run all tests",
