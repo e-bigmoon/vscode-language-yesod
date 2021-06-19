@@ -47,13 +47,18 @@
     "keyword": {
       "patterns": [
         {
-          "match": "\\$(else|nothing|doctype|newline)\\s+",
-          "name": "keyword.control.hamlet"
+          "match": "(\\$(else|nothing|doctype|newline))\\s+",
+          "captures": {
+            "1": {
+              "name": "keyword.control.hamlet"
+            }
+          },
+          "name": "meta.interpolation.hamlet"
         },
         {
-          "begin": "\\$(if|elseif|maybe|forall|case|of|with)\\s+",
+          "begin": "(\\$(if|elseif|maybe|forall|case|of|with))\\s+",
           "beginCaptures": {
-            "0": {
+            "1": {
               "name": "keyword.control.hamlet"
             }
           },

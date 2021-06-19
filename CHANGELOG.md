@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Changed
 
+- Fix existing test cases for hamlet and add Hamlet testcases (interpolation and conditional) [#25](https://github.com/e-bigmoon/vscode-language-yesod/pull/25) @isao-takejib
 - Changed to also use Haskell syntax files for testing [#38](https://github.com/e-bigmoon/vscode-language-yesod/pull/38) @isao-takejib
 - Add a badge for github actions [#36](https://github.com/e-bigmoon/vscode-language-yesod/pull/36) @isao-takejib
 - Fixing test cases [#35](https://github.com/e-bigmoon/vscode-language-yesod/pull/35) @isao-takejib
