@@ -1,8 +1,12 @@
 $# SYNTAX TEST "source.yesod.hamlet" "interpolation"
 <head>
-$# <------  meta.embedded.line.hamlet
+$# <-  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
+$# <~----  meta.tag.hamlet entity.name.tag.hamlet
+$#   ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
     <title>#{title}
-$#  ^^^^^^^  meta.embedded.line.hamlet
-$#         ^^  punctuation.section.embedded.begin.hamlet
-$#           ^^^^^  source.haskell
-$#                ^  punctuation.section.embedded.end.hamlet
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
+$#   ^^^^^  meta.tag.hamlet entity.name.tag.hamlet
+$#        ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
+$#         ^^  meta.interpolation.hamlet punctuation.section.interpolation.begin.hamlet
+$#           ^^^^^  meta.interpolation.hamlet source.haskell.embedded
+$#                ^  meta.interpolation.hamlet punctuation.section.interpolation.end.hamlet
