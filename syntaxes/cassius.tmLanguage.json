@@ -171,50 +171,23 @@
               ]
             },
             {
-              "begin": "(?i)(?=@media(\\s|\\(|/\\*|$))",
-              "end": "(?<=})(?!\\G)",
+              "begin": "(?i)(^\\s*(@)media)(?=\\s*|\\(|/\\*|$)",
+              "beginCaptures": {
+                "0": {
+                  "name": "keyword.control.at-rule.media.css"
+                },
+                ":1": {
+                  "name": "punctuation.definition.keyword.css"
+                }
+              },
+              "end": "(?!\\G\\n)",
+              "name": "meta.at-rule.media.header.css",
               "patterns": [
                 {
-                  "begin": "(?i)\\G(@)media",
-                  "beginCaptures": {
-                    "0": {
-                      "name": "keyword.control.at-rule.media.css"
-                    },
-                    "1": {
-                      "name": "punctuation.definition.keyword.css"
-                    }
-                  },
-                  "end": "(?=\\s*[{;])",
-                  "name": "meta.at-rule.media.header.css",
-                  "patterns": [
-                    {
-                      "include": "#media-query-list"
-                    }
-                  ]
-                },
-                {
-                  "begin": "{",
-                  "beginCaptures": {
-                    "0": {
-                      "name": "punctuation.section.media.begin.bracket.curly.css"
-                    }
-                  },
-                  "end": "}",
-                  "endCaptures": {
-                    "0": {
-                      "name": "punctuation.section.media.end.bracket.curly.css"
-                    }
-                  },
-                  "name": "meta.at-rule.media.body.css",
-                  "patterns": [
-                    {
-                      "include": "$self"
-                    }
-                  ]
+                  "include": "#media-query-list"
                 }
               ]
-            },
-            {
+            },            {
               "begin": "(?i)(?=@counter-style([\\s'\"{;]|/\\*|$))",
               "end": "(?<=})(?!\\G)",
               "patterns": [
