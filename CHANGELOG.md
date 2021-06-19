@@ -8,7 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Changed
 
-- Changed to also use Haskell syntax files for testing [#37](https://github.com/e-bigmoon/vscode-language-yesod/issues/37) @isao-takejib
+- Changed to also use Haskell syntax files for testing [#38](https://github.com/e-bigmoon/vscode-language-yesod/pull/38) @isao-takejib
 - Add a badge for github actions [#36](https://github.com/e-bigmoon/vscode-language-yesod/pull/36) @isao-takejib
 - Fixing test cases [#35](https://github.com/e-bigmoon/vscode-language-yesod/pull/35) @isao-takejib
 - Hamlet attribute scope names [#31](https://github.com/e-bigmoon/vscode-language-yesod/pull/31) @bi-functor
