@@ -1,13 +1,22 @@
 $# SYNTAX TEST "source.yesod.hamlet" "conditionals"
 $if isAdmin
-$# <--- keyword.control.hamlet
+$# <---  meta.interpolation.hamlet keyword.control.hamlet
 $# ^ - keyword.control.hamlet
     <p>Welcome to the admin section.
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
+$#   ^  meta.tag.hamlet entity.name.tag.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
 $elseif isLoggedIn
-$# <------- keyword.control.hamlet
+$# <-------  meta.interpolation.hamlet keyword.control.hamlet
 $#     ^ - keyword.control.hamlet
     <p>You are not the administrator.
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
+$#   ^  meta.tag.hamlet entity.name.tag.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
 $else
-$# <---- keyword.control.hamlet
+$# <----  meta.interpolation.hamlet keyword.control.hamlet
 $#   ^ - keyword.control.hamlet
     <p>I don't know who you are. Please log in so I can decide if you get access.
+$#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
+$#   ^  meta.tag.hamlet entity.name.tag.hamlet
+$#    ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
