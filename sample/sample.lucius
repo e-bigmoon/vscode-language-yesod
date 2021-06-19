@@ -13,6 +13,21 @@ section.blog {
     }
 }
 
+@media (max-width: 500px) {
+    body {
+        color: green;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        color: green;
+    }
+}
+
+a {
+    color: blue;
+}
 ##{copy} {
     margin: 1em;
 }

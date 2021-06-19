@@ -18,3 +18,14 @@ div
     font-size: 10px
     a
         font-size: 20px
+
+@media (max-width: 500px)
+    body
+        color: green
+
+@media screen and (max-width: 500px)
+    body
+        color: green
+
+a
+    color: blue
