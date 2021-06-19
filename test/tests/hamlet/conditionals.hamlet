@@ -2,6 +2,7 @@ $# SYNTAX TEST "source.yesod.hamlet" "conditionals"
 $if isAdmin
 $# <---  meta.interpolation.hamlet keyword.control.hamlet
 $# ^ - keyword.control.hamlet
+$#  ^^^^^^^  meta.interpolation.hamlet source.haskell.embedded
     <p>Welcome to the admin section.
 $#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#   ^  meta.tag.hamlet entity.name.tag.hamlet
@@ -9,6 +10,7 @@ $#    ^  meta.tag.hamlet punctuation.definition.tag.end.hamlet
 $elseif isLoggedIn
 $# <-------  meta.interpolation.hamlet keyword.control.hamlet
 $#     ^ - keyword.control.hamlet
+$#      ^^^^^^^^^^  meta.interpolation.hamlet source.haskell.embedded
     <p>You are not the administrator.
 $#  ^  meta.tag.hamlet punctuation.definition.tag.begin.hamlet
 $#   ^  meta.tag.hamlet entity.name.tag.hamlet
