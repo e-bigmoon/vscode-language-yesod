@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.8.1] - 2021-06-20
+
 ### Changed
 
 - Fix existing test cases for hamlet and add Hamlet testcases (interpolation and conditional) [#25](https://github.com/e-bigmoon/vscode-language-yesod/pull/25) @isao-takejib

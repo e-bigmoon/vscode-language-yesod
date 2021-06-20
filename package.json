@@ -14,6 +14,11 @@
   "bugs": {
     "url": "https://github.com/e-bigmoon/vscode-language-yesod/issues"
   },
+  "scripts": {
+    "test": "npm run test-hamlet && npm run test-yesodroutes",
+    "test-hamlet": "npx vscode-tmgrammar-test -s source.yesod.hamlet -g test/resources/haskell.tmLanguage.json -g syntaxes/hamlet.tmLanguage.json -t 'test/tests/hamlet/*.hamlet'",
+    "test-yesodroutes": "npx vscode-tmgrammar-test -s source.yesod.routes -g test/resources/haskell.tmLanguage.json -g syntaxes/routes.tmLanguage.json -t 'test/tests/routes/*.yesodroutes'"
+  },
   "engines": {
     "vscode": "^1.42.1"
   },
