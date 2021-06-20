@@ -30,7 +30,13 @@ lang | extension | example
 
 ## Test
 
-The following packages are used
+```shell
+$ sudo snap install yq
+$ bash ./test/resources/getHaskelltmLanguage.sh
+$ npm run test
+```
+
+The following packages are used.
 
 - [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test)
 

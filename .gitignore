@@ -1,1 +1,3 @@
 node_modules/
+test/resources/haskell.tmLanguage.json
+test/resources/haskell.YAML-tmLanguage
