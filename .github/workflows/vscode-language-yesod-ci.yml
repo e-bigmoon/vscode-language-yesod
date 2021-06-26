@@ -30,7 +30,7 @@ jobs:
       run: sudo snap install yq
 
     - name: Get Haskell tmLanguage
-      run: bash ./test/resources/getHaskelltmLanguage.sh
+      run: bash ./test/resources/getExternalTmLanguage.sh
 
     - name: Test syntax highlighting
       run: npm run test
