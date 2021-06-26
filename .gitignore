@@ -1,3 +1,4 @@
 node_modules/
+test/resources/css.tmLanguage.json
 test/resources/haskell.tmLanguage.json
 test/resources/haskell.YAML-tmLanguage
