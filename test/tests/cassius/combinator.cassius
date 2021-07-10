@@ -1,0 +1,80 @@
+// SYNTAX TEST "source.yesod.cassius" "combinators"
+
+h1 em
+// <-- meta.selector.css entity.name.tag.css
+// <~~~-- meta.selector.css entity.name.tag.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+div * p
+// <--- meta.selector.css entity.name.tag.css
+// <~~~~-  meta.selector.css entity.name.tag.wildcard.css
+// <~~~~~~- meta.selector.css entity.name.tag.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+div p *[href]
+// <--- meta.selector.css entity.name.tag.css
+// <~~~~- meta.selector.css entity.name.tag.css
+// <~~~~~~-  meta.selector.css entity.name.tag.wildcard.css
+// <~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~~~~~~~~  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+body > p
+// <---- meta.selector.css entity.name.tag.css
+// <~~~~~-  meta.selector.css keyword.operator.combinator.css
+// <~~~~~~~- meta.selector.css entity.name.tag.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+div ol>li p
+// <--- meta.selector.css entity.name.tag.css
+// <~~~~-- meta.selector.css entity.name.tag.css
+// <~~~~~~-  meta.selector.css keyword.operator.combinator.css
+// <~~~~~~~-- meta.selector.css entity.name.tag.css
+// <~~~~~~~~~~- meta.selector.css entity.name.tag.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+math + p
+// <---- meta.selector.css entity.name.tag.css
+// <~~~~~-  meta.selector.css keyword.operator.combinator.css
+// <~~~~~~~- meta.selector.css entity.name.tag.css
+    text-indent: 0
+//  ^^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//             ^  meta.property-list.css punctuation.separator.key-value.css
+//               ^  meta.property-list.css meta.property-value.css constant.numeric.css
+
+h1.opener + h2
+// <-- meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~~~------  meta.selector.css entity.other.attribute-name.class.css
+// <~~~~~~~~~~-  meta.selector.css keyword.operator.combinator.css
+// <~~~~~~~~~~~~-- meta.selector.css entity.name.tag.css
+    margin-top: -5mm
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^  meta.property-list.css meta.property-value.css constant.numeric.css
+//                ^^  meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.mm.css
+
+img ~ p
+// <--- meta.selector.css entity.name.tag.css
+// <~~~~-  meta.selector.css keyword.operator.combinator.css
+// <~~~~~~- meta.selector.css entity.name.tag.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
