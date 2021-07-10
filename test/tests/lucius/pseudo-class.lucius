@@ -610,3 +610,59 @@ div:empty {
 //              ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
 }
 // <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+button:not([disabled]) {
+// <------  meta.selector.css entity.name.tag.css
+// <~~~~~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~~~~~---  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~~~~~~~~--------  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: blue
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+*:not(p) {
+// <-  meta.selector.css entity.name.tag.wildcard.css
+// <~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~---  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~-  meta.selector.css entity.name.tag.css
+// <~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: blue
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+html|*:not(:link):not(:visited) {
+// <----  meta.selector.css entity.other.namespace-prefix.css
+// <~~~~-  meta.selector.css punctuation.separator.css
+// <~~~~~-  meta.selector.css entity.name.tag.wildcard.css
+// <~~~~~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~~~~~---  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~~~~~~~~~~----  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~~~~~~~~~~~~~~~~---  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
