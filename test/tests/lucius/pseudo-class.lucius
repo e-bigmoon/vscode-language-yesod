@@ -243,3 +243,196 @@ input:indeterminate {
 //              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
 }
 // <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(2n+1) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(odd) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~---  meta.selector.css support.constant.parity.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(2n+0) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(even) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~----  meta.selector.css support.constant.parity.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+:nth-child(10n-1) {
+// <-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~-----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+:nth-child(10n+9) {
+// <-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~-----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(0n+5) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(5) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~-  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child(n) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~-  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child( 3n + 1 ) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~------  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child( +3n - 2 ) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~-------  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child( -n+ 6) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~-----  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+tr:nth-child( +6 ) {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css
+// <~~~---------  meta.selector.css entity.other.attribute-name.pseudo-class.css
+// <~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~--  meta.selector.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    background: gray
+//  ^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//            ^  meta.property-list.css punctuation.separator.key-value.css
+//              ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
