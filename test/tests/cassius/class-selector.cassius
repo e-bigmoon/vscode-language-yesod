@@ -1,0 +1,39 @@
+// SYNTAX TEST "source.yesod.cassius" "class selector"
+
+*.pastoral
+// <-  meta.selector.css entity.name.tag.wildcard.css
+// <~-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~~~-------  meta.selector.css entity.other.attribute-name.class.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+.pastoral
+// <-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~--------  meta.selector.css entity.other.attribute-name.class.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+
+H1.pastoral
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~~~--------  meta.selector.css entity.other.attribute-name.class.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+p.pastoral.marine
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~~--------  meta.selector.css entity.other.attribute-name.class.css
+// <~~~~~~~~~~-  meta.selector.css entity.other.attribute-name.class.css punctuation.definition.entity.css
+// <~~~~~~~~~~~------  meta.selector.css entity.other.attribute-name.class.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
