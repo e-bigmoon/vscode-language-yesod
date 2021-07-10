@@ -1,0 +1,68 @@
+// SYNTAX TEST "source.yesod.lucius" "type selector"
+
+@namespace foo url(http://www.example.com);
+// <-  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css punctuation.definition.keyword.css
+// <~---------  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css
+// <~~~~~~~~~~~---  meta.at-rule.namespace.css entity.name.function.namespace-prefix.css
+// <~~~~~~~~~~~~~~~---  meta.at-rule.namespace.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~----------------------  meta.at-rule.namespace.css meta.function.url.css variable.parameter.url.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css punctuation.terminator.rule.css
+
+foo|h1 {
+// <---  meta.selector.css entity.other.namespace-prefix.css
+// <~~~-  meta.selector.css punctuation.separator.css
+// <~~~~--  meta.selector.css entity.name.tag.css
+// <~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+foo|* {
+// <---  meta.selector.css entity.other.namespace-prefix.css
+// <~~~-  meta.selector.css punctuation.separator.css
+// <~~~~-  meta.selector.css entity.name.tag.wildcard.css
+// <~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: yellow
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+|h1 {
+// <-  meta.selector.css punctuation.separator.css
+// <~--  meta.selector.css entity.name.tag.css
+// <~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: red
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+*|h1 {
+// <-  meta.selector.css entity.other.namespace-prefix.css
+// <~-  meta.selector.css punctuation.separator.css
+// <~~--  meta.selector.css entity.name.tag.css
+// <~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+h1 {
+// <--  meta.selector.css entity.name.tag.css
+// <~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css

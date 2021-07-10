@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Added
+
+- Add basic lucius test cases [#41](https://github.com/e-bigmoon/vscode-language-yesod/pull/41) @isao-takejib
+
 ## [0.8.1] - 2021-06-20
 
 ### Changed

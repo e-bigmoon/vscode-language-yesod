@@ -1,0 +1,231 @@
+// SYNTAX TEST "source.yesod.lucius" "attribute selector"
+
+h1[title] {
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~-----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//             ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+span[class="example"] {
+// <----  meta.selector.css entity.name.tag.css
+// <~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~-----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~-------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//             ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+span[hello="Cleveland"][goodbye="Columbus"] {
+// <----  meta.selector.css entity.name.tag.css
+// <~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~-----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~---------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-------  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//             ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+a[rel~="copyright"] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~---  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~--  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~---------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//             ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+a[href="http://www.w3.org/"] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~------------------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//             ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+a[hreflang=fr] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~--------  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~--  meta.selector.css meta.attribute-selector.css string.unquoted.attribute-value.css
+// <~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    display: none;
+//  ^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//         ^  meta.property-list.css punctuation.separator.key-value.css
+//           ^^^^  meta.property-list.css meta.property-value.css support.constant.property-value.css
+//               ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+a[hreflang|="en"] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~--------  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~--  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~--  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: red;
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//            ^  meta.property-list.css punctuation.terminator.rule.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+object[type^="image/"] {
+// <------  meta.selector.css entity.name.tag.css
+// <~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~~~~~~----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~~~~--  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~~------  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+a[href$=".html"] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~--  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~-----  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+p[title*="hello"] {
+// <-  meta.selector.css entity.name.tag.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~~-----  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~--  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~-----  meta.selector.css meta.attribute-selector.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+@namespace foo "http://www.example.com";
+// <-  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css punctuation.definition.keyword.css
+// <~---------  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css
+// <~~~~~~~~~~~---  meta.at-rule.namespace.css entity.name.function.namespace-prefix.css
+// <~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~~~~----------------------  meta.at-rule.namespace.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css punctuation.terminator.rule.css
+
+[foo|att=val] {
+// <-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~---  meta.selector.css meta.attribute-selector.css entity.other.namespace-prefix.css
+// <~~~~-  meta.selector.css meta.attribute-selector.css punctuation.separator.css
+// <~~~~~---  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~~~-  meta.selector.css meta.attribute-selector.css keyword.operator.pattern.css
+// <~~~~~~~~~---meta.selector.css meta.attribute-selector.css string.unquoted.attribute-value.css
+// <~~~~~~~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+[*|att] {
+// <-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~-  meta.selector.css meta.attribute-selector.css entity.other.namespace-prefix.css
+// <~~-  meta.selector.css meta.attribute-selector.css punctuation.separator.css
+// <~~~---  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: yellow
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+[|att] {
+// <-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~-  meta.selector.css meta.attribute-selector.css punctuation.separator.css
+// <~~---  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+[att] {
+// <-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.begin.bracket.square.css
+// <~---  meta.selector.css meta.attribute-selector.css entity.other.attribute-name.css
+// <~~~~-  meta.selector.css meta.attribute-selector.css punctuation.definition.entity.end.bracket.square.css
+// <~~~~~~-  meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+    color: green
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+}
+// <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css

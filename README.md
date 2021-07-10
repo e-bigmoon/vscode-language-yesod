@@ -32,7 +32,7 @@ lang | extension | example
 
 ```shell
 $ sudo snap install yq
-$ bash ./test/resources/getHaskelltmLanguage.sh
+$ bash ./test/resources/getExternalTmLanguage.sh
 $ npm run test
 ```
 
