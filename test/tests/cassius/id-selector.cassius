@@ -1,0 +1,27 @@
+// SYNTAX TEST "source.yesod.cassius" "id selector"
+
+h1#chapter1
+// <--  meta.selector.css entity.name.tag.css
+// <~~-  meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+// <~~~--------  meta.selector.css entity.other.attribute-name.id.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+#chapter1
+// <-  meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+// <~--------  meta.selector.css entity.other.attribute-name.id.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+
+*#z98y
+// <-  meta.selector.css entity.name.tag.wildcard.css
+// <~-  meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+// <~~----  meta.selector.css entity.other.attribute-name.id.css
+    color: blue
+//  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//       ^  meta.property-list.css punctuation.separator.key-value.css
+//         ^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
