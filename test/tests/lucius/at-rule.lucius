@@ -93,3 +93,20 @@
 // <~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
 // <~~~~~~~~~~~~~~~~~~~~~~-------------------------  meta.at-rule.import.css
 // <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@namespace "http://www.w3.org/1999/xhtml";
+// <-  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css punctuation.definition.keyword.css
+// <~---------  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css
+// <~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~----------------------------  meta.at-rule.namespace.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css punctuation.terminator.rule.css
+
+@namespace svg "http://www.w3.org/2000/svg";
+// <-  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css punctuation.definition.keyword.css
+// <~---------  meta.at-rule.namespace.css keyword.control.at-rule.namespace.css
+// <~~~~~~~~~~~---  meta.at-rule.namespace.css entity.name.function.namespace-prefix.css
+// <~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~~~~--------------------------  meta.at-rule.namespace.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.namespace.css punctuation.terminator.rule.css
