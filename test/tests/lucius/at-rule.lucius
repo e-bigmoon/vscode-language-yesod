@@ -1,0 +1,95 @@
+// SYNTAX TEST "source.yesod.lucius" "at-rule"
+
+@import "mystyle.css";
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~-----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import url("mystyle.css");
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~---  meta.at-rule.import.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~-----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import url("fineprint.css") print;
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~---  meta.at-rule.import.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~-------------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-----  meta.at-rule.import.css support.constant.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import url("bluish.css") projection, tv;
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~---  meta.at-rule.import.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~----------  meta.at-rule.import.css invalid.deprecated.constant.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.separator.list.comma.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--  meta.at-rule.import.css invalid.deprecated.constant.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import url("narrow.css") handheld and (max-width: 400px);
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~---  meta.at-rule.import.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~--------  meta.at-rule.import.css invalid.deprecated.constant.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---  meta.at-rule.import.css keyword.operator.logical.and.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.definition.parameters.begin.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---------  meta.at-rule.import.css support.type.property-name.media.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.separator.key-value.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---  meta.at-rule.import.css constant.numeric.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--  meta.at-rule.import.css constant.numeric.css keyword.other.unit.px.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.definition.parameters.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import url("fallback-layout.css") supports(not (display: flex));
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~---  meta.at-rule.import.css meta.function.url.css support.function.url.css
+// <~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.begin.bracket.round.css
+// <~~~~~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~~~~-------------------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css meta.function.url.css punctuation.section.function.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-----------------------------  meta.at-rule.import.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import "mystyle.css" supports(display: flex);
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~-----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~-----------------------  meta.at-rule.import.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
+
+@import "mystyle.css" supports((display: flex));
+// <-  meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css
+// <~------  meta.at-rule.import.css keyword.control.at-rule.import.css
+// <~~~~~~~~- meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~-----------  meta.at-rule.import.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~~~~~~~-------------------------  meta.at-rule.import.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.import.css punctuation.terminator.rule.css
