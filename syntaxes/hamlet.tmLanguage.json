@@ -88,7 +88,7 @@
     "tag": {
       "patterns": [
         {
-          "begin": "(<)([a-z0-9]+)",
+          "begin": "(</?)([a-z0-9]+)",
           "beginCaptures": {
             "1": {
               "name": "punctuation.definition.tag.begin.hamlet"
@@ -97,7 +97,7 @@
               "name": "entity.name.tag.hamlet"
             }
           },
-          "end": ">",
+          "end": "/?>",
           "endCaptures": {
             "0": {
               "name": "punctuation.definition.tag.end.hamlet"
