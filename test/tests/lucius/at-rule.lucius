@@ -396,6 +396,12 @@
 //            ^  meta.property-list.css punctuation.separator.key-value.css
 //              ^^^^^^  meta.property-list.css meta.property-value.css support.constant.property-value.css
 //                    ^  meta.property-list.css punctuation.terminator.rule.css
+    font-stretch: 50%;
+//  ^^^^^^^^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
+//              ^  meta.property-list.css punctuation.separator.key-value.css
+//                ^^  meta.property-list.css meta.property-value.css constant.numeric.css
+//                  ^  meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.percentage.css
+//                   ^  meta.property-list.css punctuation.terminator.rule.css
 }
 // <-  meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
 
