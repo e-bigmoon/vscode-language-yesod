@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add lucius test cases for `@keyframes` [#46](https://github.com/e-bigmoon/vscode-language-yesod/pull/46) @isao-takejib
 - Add lucius test cases for `@font-face` [#45](https://github.com/e-bigmoon/vscode-language-yesod/pull/45) @isao-takejib
 - Add lucius test cases for `@page` [#44](https://github.com/e-bigmoon/vscode-language-yesod/pull/44) @isao-takejib
 - Add lucius test cases for at-rule (`@import`, `@namespace`, `@media`) [#43](https://github.com/e-bigmoon/vscode-language-yesod/pull/43) @isao-takejib
