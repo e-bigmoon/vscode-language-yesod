@@ -8,7 +8,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- Add lucius test cases for at-rule [#43](https://github.com/e-bigmoon/vscode-language-yesod/pull/43) @isao-takejib
+- Add lucius test cases for `@page` [#44](https://github.com/e-bigmoon/vscode-language-yesod/pull/44) @isao-takejib
+- Add lucius test cases for at-rule (`@import`, `@namespace`, `@media`) [#43](https://github.com/e-bigmoon/vscode-language-yesod/pull/43) @isao-takejib
 - Add basic lucius test cases [#41](https://github.com/e-bigmoon/vscode-language-yesod/pull/41) @isao-takejib
 
 ## [0.8.1] - 2021-06-20
