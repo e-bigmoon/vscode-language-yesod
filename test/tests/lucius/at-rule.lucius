@@ -672,3 +672,65 @@
 //  ^  meta.at-rule.keyframes.body.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
 }
 // <-  meta.at-rule.keyframes.body.css punctuation.section.keyframes.end.bracket.curly.css
+
+@supports (display: flex) {
+// <-  meta.at-rule.supports.header.css keyword.control.at-rule.supports.css punctuation.definition.keyword.css
+// <~--------  meta.at-rule.supports.header.css keyword.control.at-rule.supports.css
+// <~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.definition.condition.begin.bracket.round.css
+// <~~~~~~~~~~~-------  meta.at-rule.supports.header.css meta.feature-query.css meta.property-name.css support.type.property-name.css
+// <~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.separator.key-value.css
+// <~~~~~~~~~~~~~~~~~~~~----  meta.at-rule.supports.header.css meta.feature-query.css meta.property-value.css support.constant.property-value.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.definition.condition.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.body.css punctuation.section.supports.begin.bracket.curly.css
+    body, #navigation, #content {
+//  ^^^^  meta.at-rule.supports.body.css meta.selector.css entity.name.tag.css
+//      ^  meta.at-rule.supports.body.css meta.selector.css punctuation.separator.list.comma.css
+//        ^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+//         ^^^^^^^^^^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css
+//                   ^  meta.at-rule.supports.body.css meta.selector.css punctuation.separator.list.comma.css
+//                     ^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+//                      ^^^^^^^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css
+//                              ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+        display: flex;
+//      ^^^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-name.css support.type.property-name.css
+//             ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.separator.key-value.css
+//               ^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-value.css support.constant.property-value.css
+//                   ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.terminator.rule.css
+    }
+//  ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+    #navigation {
+//  ^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+//   ^^^^^^^^^^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css
+//              ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+        background: blue;
+//      ^^^^^^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-name.css support.type.property-name.css
+//                ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.separator.key-value.css
+//                  ^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//                      ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.terminator.rule.css
+        color: white;
+//      ^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-name.css support.type.property-name.css
+//           ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.separator.key-value.css
+//             ^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//                  ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.terminator.rule.css
+    }
+//  ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+
+    #article {
+//  ^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css punctuation.definition.entity.css
+//   ^^^^^^^  meta.at-rule.supports.body.css meta.selector.css entity.other.attribute-name.id.css
+//           ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.begin.bracket.curly.css
+        background: white;
+//      ^^^^^^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-name.css support.type.property-name.css
+//                ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.separator.key-value.css
+//                  ^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//                       ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.terminator.rule.css
+        color: black;
+//      ^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-name.css support.type.property-name.css
+//           ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.separator.key-value.css
+//             ^^^^^  meta.at-rule.supports.body.css meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
+//                  ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.terminator.rule.css
+    }
+//  ^  meta.at-rule.supports.body.css meta.property-list.css punctuation.section.property-list.end.bracket.curly.css
+}
+// <-  meta.at-rule.supports.body.css punctuation.section.supports.end.bracket.curly.css
