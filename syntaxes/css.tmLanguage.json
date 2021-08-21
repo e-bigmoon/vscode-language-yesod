@@ -31,7 +31,7 @@
 		"at-rules": {
 			"patterns": [
 				{
-					"begin": "\\A(?:\\xEF\\xBB\\xBF)?(?i:(?=\\s*@charset\\b))",
+					"begin": "\\A(?:\\xEF\\xBB\\xBF)?(// SYNTAX TEST \"\\.*\"\\s+\"\\.*\"\\n\\n)?(?i:(?=\\s*@charset\\b))",
 					"end": ";|(?=$)",
 					"endCaptures": {
 						"0": {
