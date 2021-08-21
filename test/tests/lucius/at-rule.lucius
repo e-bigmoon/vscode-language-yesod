@@ -989,3 +989,16 @@
 // <~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.body.css punctuation.section.supports.begin.bracket.curly.css
 }
 // <-  meta.at-rule.supports.body.css punctuation.section.supports.end.bracket.curly.css
+
+@supports (display: flex !important) {
+// <-  meta.at-rule.supports.header.css keyword.control.at-rule.supports.css punctuation.definition.keyword.css
+// <~--------  meta.at-rule.supports.header.css keyword.control.at-rule.supports.css
+// <~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.definition.condition.begin.bracket.round.css
+// <~~~~~~~~~~~-------  meta.at-rule.supports.header.css meta.feature-query.css meta.property-name.css support.type.property-name.css
+// <~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.separator.key-value.css
+// <~~~~~~~~~~~~~~~~~~~~----  meta.at-rule.supports.header.css meta.feature-query.css meta.property-value.css support.constant.property-value.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~----------  meta.at-rule.supports.header.css meta.feature-query.css meta.property-value.css keyword.other.important.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.header.css meta.feature-query.css punctuation.definition.condition.end.bracket.round.css
+// <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  meta.at-rule.supports.body.css punctuation.section.supports.begin.bracket.curly.css
+}
+// <-  meta.at-rule.supports.body.css punctuation.section.supports.end.bracket.curly.css
