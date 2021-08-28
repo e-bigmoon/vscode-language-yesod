@@ -1,0 +1,8 @@
+// SYNTAX TEST "source.yesod.lucius" "at-charset"
+@charset "utf-8";
+// <-  meta.at-rule.charset.css keyword.control.at-rule.charset.css punctuation.definition.keyword.css
+// <~-------  meta.at-rule.charset.css keyword.control.at-rule.charset.css
+// <~~~~~~~~~-  meta.at-rule.charset.css string.quoted.double.css punctuation.definition.string.begin.css
+// <~~~~~~~~~~-----  meta.at-rule.charset.css string.quoted.double.css
+// <~~~~~~~~~~~~~~~-  meta.at-rule.charset.css string.quoted.double.css punctuation.definition.string.end.css
+// <~~~~~~~~~~~~~~~~-  meta.at-rule.charset.css punctuation.terminator.rule.css
