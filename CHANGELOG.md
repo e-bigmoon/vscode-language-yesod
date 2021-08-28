@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add lucius test cases for `@document` [#50](https://github.com/e-bigmoon/vscode-language-yesod/pull/50) @isao-takejib
 - Add lucius test cases for `@charset` [#49](https://github.com/e-bigmoon/vscode-language-yesod/pull/49) @isao-takejib
 - Add lucius test cases for `@supports` [#47](https://github.com/e-bigmoon/vscode-language-yesod/pull/47) @isao-takejib
 - Add lucius test cases for `@keyframes` [#46](https://github.com/e-bigmoon/vscode-language-yesod/pull/46) @isao-takejib
