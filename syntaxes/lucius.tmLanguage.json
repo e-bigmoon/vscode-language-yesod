@@ -10,16 +10,25 @@
     "interpolation": {
       "patterns": [
         {
-          "match": "([#@]){(.+)}",
-          "captures": {
-            "1": {
-              "name": "entity.other.attribute-name.yesod"
-            },
-            "2": {
-              "name": "constant.other.yesod"
+          "begin": "([#@])\\{",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.section.interpolation.begin.lucius"
             }
           },
-          "name": "interpolation.yesod"
+          "contentName": "source.haskell.embedded",
+          "end": "(\\})",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.interpolation.end.lucius"
+            }
+          },
+          "name": "meta.interpolation.lucius",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
         }
       ]
     }
