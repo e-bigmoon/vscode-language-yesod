@@ -1522,17 +1522,30 @@
           "include": "#rule-list-innards"
         },
         {
-          "captures": {
+          "begin": "\\s*([a-zA-Z0-9-]+)\\s*({)",
+          "beginCaptures": {
             "1": {
               "patterns": [
                 {
-                  "include": "#selector"
+                  "include": "#selector-innards"
                 }
               ]
+            },
+            "2": {
+              "name": "punctuation.section.property-list.begin.bracket.curly.css"
             }
           },
-          "match": "\\s*([a-zA-Z0-9-]+)\\s*(?={)",
-          "name": "meta.selector-innards.css"
+          "end": "}",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.property-list.end.bracket.curly.css"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#rule-list-innards"
+            }
+          ]
         }
       ]
     },
