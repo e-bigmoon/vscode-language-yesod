@@ -1520,6 +1520,19 @@
       "patterns": [
         {
           "include": "#rule-list-innards"
+        },
+        {
+          "captures": {
+            "1": {
+              "patterns": [
+                {
+                  "include": "#selector"
+                }
+              ]
+            }
+          },
+          "match": "\\s*([a-zA-Z0-9-]+)\\s*(?={)",
+          "name": "meta.selector-innards.css"
         }
       ]
     },
