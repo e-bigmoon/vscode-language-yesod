@@ -1522,30 +1522,7 @@
           "include": "#rule-list-innards"
         },
         {
-          "begin": "\\s*([a-zA-Z0-9-]+)\\s*({)",
-          "beginCaptures": {
-            "1": {
-              "patterns": [
-                {
-                  "include": "#selector-innards"
-                }
-              ]
-            },
-            "2": {
-              "name": "punctuation.section.property-list.begin.bracket.curly.css"
-            }
-          },
-          "end": "}",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.section.property-list.end.bracket.curly.css"
-            }
-          },
-          "patterns": [
-            {
-              "include": "#rule-list-innards"
-            }
-          ]
+          "include": "#selector"
         }
       ]
     },
@@ -1613,7 +1590,7 @@
         }
       ]
     },
-    "selector": {
+    ":selector": {
       "begin": "(?x)\n(?=\n  (?:\\|)?                    # Possible anonymous namespace prefix\n  (?:\n    [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n    |\n    [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n    |\n    \\\\                      # Or an escape sequence\n    (?:[0-9a-fA-F]{1,6}|.)\n  )\n)",
       "end": "(?=\\s*[/@{)])",
       "name": "meta.selector.css",
@@ -1622,6 +1599,21 @@
           "include": "#selector-innards"
         }
       ]
+    },
+    "selector": {
+      "::match": "(?=\\s*)(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=[^;])(?=\\s*{)",
+      ":match": "(?=\\s*)(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=\\s*{)",
+      "match": "\\s*(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=\\s*{)",
+      "captures": {
+        "1": {
+          "name": "meta.selector.css",
+          "patterns": [
+            {
+              "include": "#selector-innards"
+            }
+          ]
+        }
+      }
     },
     "selector-innards": {
       "patterns": [
