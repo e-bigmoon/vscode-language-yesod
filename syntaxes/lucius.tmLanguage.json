@@ -1519,10 +1519,10 @@
       "name": "meta.property-list.css",
       "patterns": [
         {
-          "include": "#rule-list-innards"
+          "include": "#selector"
         },
         {
-          "include": "#selector"
+          "include": "#rule-list-innards"
         }
       ]
     },
@@ -1587,6 +1587,9 @@
         {
           "match": ";",
           "name": "punctuation.terminator.rule.css"
+        },
+        {
+          "include": "$self"
         }
       ]
     },
@@ -1601,9 +1604,7 @@
       ]
     },
     "selector": {
-      "::match": "(?=\\s*)(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=[^;])(?=\\s*{)",
-      ":match": "(?=\\s*)(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=\\s*{)",
-      "match": "\\s*(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.+))(?=\\s*{)",
+      "match": "(?x)(((?:\\|)?(?:[-\\[:.*\\#a-zA-Z_]|[^\\x00-\\x7F]|\\\\(?:[0-9a-fA-F]{1,6}|.)))(.*))(?=[^@\\#]{)",
       "captures": {
         "1": {
           "name": "meta.selector.css",
