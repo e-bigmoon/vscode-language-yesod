@@ -1593,16 +1593,6 @@
         }
       ]
     },
-    ":selector": {
-      "begin": "(?x)\n(?=\n  (?:\\|)?                    # Possible anonymous namespace prefix\n  (?:\n    [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n    |\n    [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n    |\n    \\\\                      # Or an escape sequence\n    (?:[0-9a-fA-F]{1,6}|.)\n  )\n)",
-      "end": "(?=\\s*[/@{)])",
-      "name": "meta.selector.css",
-      "patterns": [
-        {
-          "include": "#selector-innards"
-        }
-      ]
-    },
     "selector": {
       "match": "(?x)\n(\n  (\n    (?:\\|)?                    # Possible anonymous namespace prefix\n    (?:\n      [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n      |\n      [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n      |\n      \\\\                      # Or an escape sequence\n      (?:[0-9a-fA-F]{1,6}|.)\n    )\n  )\n  (.*)\n)\n(?=[^@\\#]{)",
       "captures": {
