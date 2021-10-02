@@ -26,6 +26,9 @@
   "categories": [
     "Programming Languages"
   ],
+  "extensionDependencies": [
+    "justusadam.language-haskell"
+  ],
   "contributes": {
     "languages": [
       {
