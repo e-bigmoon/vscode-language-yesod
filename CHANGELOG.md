@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.9.0] - 2021-10-02
+
 ### Added
 
 - Add highlighting for nesting in lucius, and add test cases [#52](https://github.com/e-bigmoon/vscode-language-yesod/pull/52) @isao-takejib
