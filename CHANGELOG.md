@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Added
+
+- Add Haskell Syntax Highlighting as a dependency [#54](https://github.com/e-bigmoon/vscode-language-yesod/pull/54) @isao-takejib
+
 ## [0.9.0] - 2021-10-02
 
 ### Added
