@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add highlighting for nesting in lucius, and add test cases [#52](https://github.com/e-bigmoon/vscode-language-yesod/pull/52) @isao-takejib
 - Add `#{...}` and `@{...}` interpolation for lucius, and add test cases [#51](https://github.com/e-bigmoon/vscode-language-yesod/pull/51) @isao-takejib
 - Add lucius test cases for `@document` [#50](https://github.com/e-bigmoon/vscode-language-yesod/pull/50) @isao-takejib
 - Add lucius test cases for `@charset` [#49](https://github.com/e-bigmoon/vscode-language-yesod/pull/49) @isao-takejib
