@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add basic cassius test cases (selector group, class selector, id selector, combinators) [#42](https://github.com/e-bigmoon/vscode-language-yesod/pull/42) @isao-takejib
 - Add Haskell Syntax Highlighting as a dependency [#54](https://github.com/e-bigmoon/vscode-language-yesod/pull/54) @isao-takejib
 
 ## [0.9.0] - 2021-10-02
