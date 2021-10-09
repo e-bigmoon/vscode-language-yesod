@@ -1,6 +1,6 @@
 #!/bin/bash -
 
-set -eux
+set -eu
 
 LANGNAME=${1}
 TESTS="./test/tests"
