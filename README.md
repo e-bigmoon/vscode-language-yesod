@@ -41,6 +41,17 @@ The following packages are used.
 
 - [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test)
 
+## Debug
+
+```shell
+$ npm run debug
+$ ls -l debug
+debug.cassius
+debug.hamlet
+debug.lucius
+debug.yesodroutes
+```
+
 ## Publish
 
 - [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
