@@ -34,6 +34,7 @@ lang | extension | example
 ```shell
 $ sudo snap install yq
 $ bash ./test/resources/getExternalTmLanguage.sh
+$ npm install
 $ npm run test
 ```
 
