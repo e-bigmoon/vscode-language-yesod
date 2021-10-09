@@ -16,7 +16,6 @@
 //  ^^^^^  meta.property-list.css meta.property-name.css support.type.property-name.css
 //       ^  meta.property-list.css punctuation.separator.key-value.css
 //         ^^^^^  meta.property-list.css meta.property-value.css support.constant.color.w3c-standard-color-name.css
-}
 
 H1.pastoral
 // <--  meta.selector.css entity.name.tag.css
