@@ -41,6 +41,21 @@ The following packages are used.
 
 - [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test)
 
+## Debug
+
+```shell
+$ bash ./generateDebugFile.sh <extension name>
+$ ls debug
+```
+
+### Example
+
+```shell
+$ bash ./generateDebugFile.sh lucius
+$ ls debug
+debug.lucius
+```
+
 ## Publish
 
 - [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
