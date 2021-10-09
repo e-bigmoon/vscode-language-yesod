@@ -45,8 +45,11 @@ The following packages are used.
 
 ```shell
 $ npm run debug
-$ ls debug
-debug.cassius          debug.hamlet           debug.lucius           debug.yesodroutes
+$ ls -l debug
+debug.cassius
+debug.hamlet
+debug.lucius
+debug.yesodroutes
 ```
 
 ## Publish

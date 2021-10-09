@@ -24,7 +24,7 @@
     "debug-hamlet": "sh ./generateDebugFile.sh hamlet",
     "debug-lucius": "sh ./generateDebugFile.sh lucius",
     "debug-cassius": "sh ./generateDebugFile.sh cassius",
-    "debug-yesodroutes": "sh ./generateDebugFile.sh yesodroutes"
+    "debug-yesodroutes": "sh ./generateDebugFile.sh yesodroutes",
     "clean": "rm -rf test/tests/**/*.snap"
   },
   "engines": {
