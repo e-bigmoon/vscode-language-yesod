@@ -8,6 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add a script to generate debug files from test cases [#58](https://github.com/e-bigmoon/vscode-language-yesod/pull/58) @isao-takejib
 - Add marketplace badge [#55](https://github.com/e-bigmoon/vscode-language-yesod/pull/55) @isao-takejib
 - Add basic cassius test cases (selector group, class selector, id selector, combinators) [#42](https://github.com/e-bigmoon/vscode-language-yesod/pull/42) @isao-takejib
 - Add Haskell Syntax Highlighting as a dependency [#54](https://github.com/e-bigmoon/vscode-language-yesod/pull/54) @isao-takejib
