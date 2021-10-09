@@ -19,7 +19,12 @@
     "test-hamlet": "npx vscode-tmgrammar-test -s source.yesod.hamlet -g test/resources/haskell.tmLanguage.json -g syntaxes/hamlet.tmLanguage.json -t 'test/tests/hamlet/*.hamlet'",
     "test-lucius": "npx vscode-tmgrammar-test -s source.yesod.lucius -g test/resources/haskell.tmLanguage.json -g syntaxes/lucius.tmLanguage.json -t 'test/tests/lucius/*.lucius'",
     "test-cassius": "npx vscode-tmgrammar-test -s source.yesod.cassius -g test/resources/haskell.tmLanguage.json -g syntaxes/cassius.tmLanguage.json -t 'test/tests/cassius/*.cassius'",
-    "test-yesodroutes": "npx vscode-tmgrammar-test -s source.yesod.routes -g test/resources/haskell.tmLanguage.json -g syntaxes/routes.tmLanguage.json -t 'test/tests/yesodroutes/*.yesodroutes'"
+    "test-yesodroutes": "npx vscode-tmgrammar-test -s source.yesod.routes -g test/resources/haskell.tmLanguage.json -g syntaxes/routes.tmLanguage.json -t 'test/tests/yesodroutes/*.yesodroutes'",
+    "debug": "npm run debug-hamlet && npm run debug-lucius && npm run debug-cassius && npm run debug-yesodroutes",
+    "debug-hamlet": "sh ./generateDebugFile.sh hamlet",
+    "debug-lucius": "sh ./generateDebugFile.sh lucius",
+    "debug-cassius": "sh ./generateDebugFile.sh cassius",
+    "debug-yesodroutes": "sh ./generateDebugFile.sh yesodroutes"
   },
   "engines": {
     "vscode": "^1.42.1"
