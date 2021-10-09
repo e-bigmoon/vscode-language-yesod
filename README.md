@@ -44,16 +44,9 @@ The following packages are used.
 ## Debug
 
 ```shell
-$ bash ./generateDebugFile.sh <extension name>
+$ npm run debug
 $ ls debug
-```
-
-### Example
-
-```shell
-$ bash ./generateDebugFile.sh lucius
-$ ls debug
-debug.lucius
+debug.cassius          debug.hamlet           debug.lucius           debug.yesodroutes
 ```
 
 ## Publish
