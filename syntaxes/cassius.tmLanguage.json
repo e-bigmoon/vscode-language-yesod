@@ -1504,6 +1504,19 @@
       "name": "entity.other.attribute-name.pseudo-element.css"
     },
     "rule-list": {
+      "match": "^\\s*([^:\n]+\\s*:\\s*[^:\n]+)$",
+      "captures": {
+        "1": {
+          "name": "meta.property-list.css",
+          "patterns": [
+            {
+              "include": "#rule-list-innards"
+            }
+          ]
+        }
+      }
+    },
+    ":rule-list": {
       "begin": "{",
       "beginCaptures": {
         "0": {
@@ -1594,7 +1607,7 @@
       ]
     },
     "selector": {
-      "match": "(?x)\n(\n  (\n    (?:\\|)?                    # Possible anonymous namespace prefix\n    (?:\n      [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n      |\n      [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n      |\n      \\\\                      # Or an escape sequence\n      (?:[0-9a-fA-F]{1,6}|.)\n    )\n  )\n  (.*)\n)\n(?=[^@\\#]{)",
+      "match": "(?x)\n(\n  (\n    (?:\\|)?                   # Possible anonymous namespace prefix\n    (?:\n      [-\\[:.*\\#a-zA-Z_]       # Valid selector character\n      |\n      [^\\x00-\\x7F]            # Which can include non-ASCII symbols\n      |\n      \\\\                      # Or an escape sequence\n      (?:[0-9a-fA-F]{1,6}|.)\n    )\n  )\n  (.*)\n)$",
       "captures": {
         "1": {
           "name": "meta.selector.css",
